@@ -10,4 +10,4 @@ Scenario: Fetch all tickets with pagination.
   When method get
   Then status 200
   ## Then status 201
-  And print response
+  ## And print response
