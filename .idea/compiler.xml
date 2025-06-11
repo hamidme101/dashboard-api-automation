@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/karate-archetype/src/main/resources/archetype-resources" includeSubdirectories="true" />
+    </excludeFromCompile>
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="karate-archetype" target="17" />
+      <module name="karate-core" target="17" />
+      <module name="karate-e2e-tests" target="17" />
+      <module name="karate-gatling" target="17" />
+      <module name="karate-junit5" target="17" />
+      <module name="karate-playwright" target="17" />
+      <module name="karate-robot" target="17" />
+      <module name="karate-test" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

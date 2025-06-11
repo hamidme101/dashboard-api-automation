@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: demo/revechat/SingleTicketDetails.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>demo</td>
+      <td>11 Jun 2025, 08:30</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">demo/revechat/SingleTicketDetails.feature</td>
+          <td      class="passed"    >5</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">5</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="677027200">0.677</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">demo/revechat/SingleTicketDetails.feature</span>
+
+
+</div>
+
+        <div class="description indention">Get Single Ticket Details</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.677</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Fetch single ticket by ID</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url baseUrl + '/external-ticket/681b1127b5c1704e019545cc'</span>
+
+  <span class="lead-duration duration">0.009</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header authorization = authToken</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.653</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>08:30:18.853 request:
+1 &gt; GET https://test-chat-022.revechat.com/rest/v1/external-ticket/681b1127b5c1704e019545cc
+1 &gt; authorization: eyJhbGciOiJIUzI1NiJ9.eyJhY2NvdW50SWQiOiI1NDg3OTg3Iiwic3ViIjoiYXV0aG9yaXphdGlvbiIsImV4cCI6MTc1MTg4NDA0MiwiaWF0IjoxNzQ5MjkyMDQyfQ.mCS1ZrMFhWqJyDAEf6-QYFfvZwHaXMmL7Dv0ydU300M
+1 &gt; Host: test-chat-022.revechat.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.7)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+08:30:19.305 response time in milliseconds: 438
+1 &lt; 200
+1 &lt; Server: nginx/1.20.1
+1 &lt; Date: Wed, 11 Jun 2025 02:30:19 GMT
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; Set-Cookie: revechatLocaleCookie=en; Max-Age=31536000; Expires=Thu, 11-Jun-2026 02:30:19 GMT; Path=/; SameSite=None
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+1 &lt; Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+{&quot;status&quot;:&quot;success&quot;,&quot;message&quot;:&quot;found&quot;,&quot;body&quot;:{&quot;id&quot;:&quot;681b1127b5c1704e019545cc&quot;,&quot;accountId&quot;:&quot;5487987&quot;,&quot;chatInfoId&quot;:null,&quot;description&quot;:&quot;&lt;p&gt;Hello&lt;br&gt;How are you?&lt;br&gt;Would you please suggest me how to integrate instra&lt;/p&gt;&quot;,&quot;descriptionText&quot;:null,&quot;isDeleted&quot;:false,&quot;subject&quot;:&quot;Need help to Instra integration&quot;,&quot;assigneeId&quot;:8564078,&quot;assignee&quot;:{&quot;id&quot;:8564078,&quot;accountId&quot;:&quot;5487987&quot;,&quot;roleId&quot;:1,&quot;role&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Super Admin&quot;,&quot;description&quot;:&quot;Reve Chat Super Administrator&quot;,&quot;default&quot;:true},&quot;mailAddress&quot;:&quot;hamid40057@gmail.com&quot;,&quot;mailServer&quot;:null,&quot;designation&quot;:&quot;XYZ&quot;,&quot;address&quot;:null,&quot;phone&quot;:&quot;8801770991829&quot;,&quot;additionalInfo&quot;:null,&quot;onlineStatus&quot;:0,&quot;lastLoginTime&quot;:1749607588254,&quot;lastLogoutTime&quot;:1749608086243,&quot;lastName&quot;:&quot;Change&quot;,&quot;firstName&quot;:&quot;Hamid&quot;,&quot;concurrentChat&quot;:5,&quot;isPasswordChanged&quot;:0,&quot;updatedTime&quot;:1682078868351,&quot;isActive&quot;:true,&quot;hasBotAccess&quot;:true,&quot;hasBillingAccess&quot;:true,&quot;userStatus&quot;:0,&quot;isDeleted&quot;:false,&quot;isOnboardingDone&quot;:1,&quot;profilePictureURL&quot;:&quot;5487987-21b81a27-0d80-4f9b-a433-408eb0c81afb.png&quot;,&quot;accCreatedTime&quot;:null,&quot;departments&quot;:[{&quot;id&quot;:1528,&quot;name&quot;:&quot;test&quot;,&quot;description&quot;:&quot;&quot;,&quot;clOperatorCode&quot;:&quot;5487987&quot;}],&quot;fromAD&quot;:false},&quot;ticketStatusId&quot;:3,&quot;ticketStatus&quot;:{&quot;id&quot;:3,&quot;accountId&quot;:&quot;&quot;,&quot;agentStatusName&quot;:&quot;IN PROGRESS&quot;,&quot;colorCode&quot;:&quot;#6C69F9&quot;,&quot;category&quot;:&quot;IN_PROGRESS&quot;,&quot;type&quot;:&quot;DEFAULT&quot;,&quot;visitorStatusName&quot;:&quot;IN PROGRESS&quot;,&quot;showVisitor&quot;:true,&quot;notify&quot;:false,&quot;notifyTo&quot;:[&quot;VISITOR&quot;],&quot;templateId&quot;:null,&quot;template&quot;:null,&quot;groupId&quot;:1,&quot;sortNo&quot;:1,&quot;isDefault&quot;:true,&quot;created&quot;:1662612096576,&quot;updated&quot;:1662612096576,&quot;isDeleted&quot;:false},&quot;ticketPriorityId&quot;:4,&quot;ticketPriority&quot;:{&quot;id&quot;:4,&quot;priorityName&quot;:&quot;LOW&quot;,&quot;colorCode&quot;:&quot;#909FAC&quot;},&quot;statusCategory&quot;:&quot;IN_PROGRESS&quot;,&quot;isSpammed&quot;:false,&quot;attachments&quot;:[],&quot;confirmationEmailStatus&quot;:&quot;DELIVERED&quot;,&quot;creationSource&quot;:&quot;MANUAL&quot;,&quot;visitorRecord&quot;:{&quot;id&quot;:61347,&quot;visitorId&quot;:57540,&quot;sessionId&quot;:null,&quot;ip&quot;:null,&quot;platform&quot;:null,&quot;browserName&quot;:null,&quot;referral&quot;:null,&quot;url&quot;:null,&quot;visitCount&quot;:null,&quot;viewsCount&quot;:null,&quot;email&quot;:&quot;hamidme101@gmail.com&quot;,&quot;phone&quot;:&quot;&quot;,&quot;visitorOldName&quot;:null,&quot;visitorNotes&quot;:null,&quot;accountId&quot;:&quot;5487987&quot;,&quot;preChatSurveyExtraFields&quot;:null,&quot;postChatSurveyExtraFields&quot;:null,&quot;deviceType&quot;:null,&quot;visitorSource&quot;:null,&quot;visitorName&quot;:&quot;Abu Taposh&quot;,&quot;locationDto&quot;:{&quot;countryCode&quot;:&quot;-&quot;,&quot;country&quot;:&quot;-&quot;,&quot;city&quot;:&quot;-&quot;,&quot;latitude&quot;:&quot;0.0&quot;,&quot;longitude&quot;:&quot;0.0&quot;,&quot;region&quot;:&quot;-&quot;},&quot;visitorMediaId&quot;:null,&quot;channelType&quot;:null,&quot;visitorUUID&quot;:null},&quot;tagIds&quot;:[1216,1217],&quot;creatorId&quot;:1721304727148,&quot;creator&quot;:null,&quot;formId&quot;:null,&quot;formsDTO&quot;:null,&quot;ticketUUID&quot;:&quot;100072ca-7b1c-4aa6-8c9e-70de8d08313e&quot;,&quot;ticketId&quot;:&quot;19&quot;,&quot;mailMsgId&quot;:&quot;50daeb01-c486-4797-90fc-0c03c587aba2&quot;,&quot;isOverDue&quot;:false,&quot;dueDate&quot;:1753984799999,&quot;statusGroupId&quot;:1,&quot;statusGroupDTO&quot;:{&quot;id&quot;:1,&quot;accountId&quot;:&quot;&quot;,&quot;creator&quot;:{&quot;id&quot;:8563843,&quot;accountId&quot;:&quot;4680608&quot;,&quot;roleId&quot;:1,&quot;role&quot;:null,&quot;mailAddress&quot;:&quot;revechat.test.pervez@gmail.com&quot;,&quot;mailServer&quot;:null,&quot;designation&quot;:&quot;&quot;,&quot;address&quot;:null,&quot;phone&quot;:&quot;8801726407234&quot;,&quot;additionalInfo&quot;:null,&quot;onlineStatus&quot;:0,&quot;lastLoginTime&quot;:1748948264072,&quot;lastLogoutTime&quot;:1747458435510,&quot;lastName&quot;:&quot;Islam Pervez&quot;,&quot;firstName&quot;:&quot;Fokhrul&quot;,&quot;concurrentChat&quot;:3,&quot;isPasswordChanged&quot;:0,&quot;updatedTime&quot;:1678761828918,&quot;isActive&quot;:true,&quot;hasBotAccess&quot;:true,&quot;hasBillingAccess&quot;:true,&quot;userStatus&quot;:0,&quot;isDeleted&quot;:false,&quot;isOnboardingDone&quot;:1,&quot;profilePictureURL&quot;:&quot;4680608-5ec02d4d-a252-41d2-852d-7160158f5c30.png&quot;,&quot;password&quot;:null,&quot;updatedPassword&quot;:null,&quot;retypedUpdatedPassword&quot;:null,&quot;sha1Password&quot;:null,&quot;accCreatedTime&quot;:1678761828000,&quot;departments&quot;:[],&quot;departmentIds&quot;:[],&quot;profileStatus&quot;:1,&quot;fromAD&quot;:true},&quot;title&quot;:&quot;DEFAULT STATUS GROUP&quot;,&quot;description&quot;:&quot;this is the default status group&quot;,&quot;departments&quot;:[],&quot;status&quot;:true,&quot;isDefault&quot;:true,&quot;statusList&quot;:[{&quot;id&quot;:1,&quot;accountId&quot;:&quot;&quot;,&quot;agentStatusName&quot;:&quot;OPEN&quot;,&quot;colorCode&quot;:&quot;#EE7D64&quot;,&quot;category&quot;:&quot;OPEN&quot;,&quot;type&quot;:&quot;DEFAULT&quot;,&quot;visitorStatusName&quot;:&quot;OPEN&quot;,&quot;showVisitor&quot;:true,&quot;notify&quot;:true,&quot;notifyTo&quot;:[&quot;VISITOR&quot;],&quot;templateId&quot;:null,&quot;template&quot;:null,&quot;groupId&quot;:1,&quot;sortNo&quot;:1,&quot;isDefault&quot;:true,&quot;created&quot;:1662612096576,&quot;updated&quot;:1662612096576,&quot;isDeleted&quot;:false},{&quot;id&quot;:2,&quot;accountId&quot;:&quot;&quot;,&quot;agentStatusName&quot;:&quot;SOLVED&quot;,&quot;colorCode&quot;:&quot;#18A326&quot;,&quot;category&quot;:&quot;SOLVED&quot;,&quot;type&quot;:&quot;DEFAULT&quot;,&quot;visitorStatusName&quot;:&quot;SOLVED&quot;,&quot;showVisitor&quot;:true,&quot;notify&quot;:true,&quot;notifyTo&quot;:[&quot;VISITOR&quot;],&quot;templateId&quot;:null,&quot;template&quot;:null,&quot;groupId&quot;:1,&quot;sortNo&quot;:1,&quot;isDefault&quot;:true,&quot;created&quot;:1662612096576,&quot;updated&quot;:1662612096576,&quot;isDeleted&quot;:false},{&quot;id&quot;:3,&quot;accountId&quot;:&quot;&quot;,&quot;agentStatusName&quot;:&quot;IN PROGRESS&quot;,&quot;colorCode&quot;:&quot;#6C69F9&quot;,&quot;category&quot;:&quot;IN_PROGRESS&quot;,&quot;type&quot;:&quot;DEFAULT&quot;,&quot;visitorStatusName&quot;:&quot;IN PROGRESS&quot;,&quot;showVisitor&quot;:true,&quot;notify&quot;:false,&quot;notifyTo&quot;:[&quot;VISITOR&quot;],&quot;templateId&quot;:null,&quot;template&quot;:null,&quot;groupId&quot;:1,&quot;sortNo&quot;:1,&quot;isDefault&quot;:true,&quot;created&quot;:1662612096576,&quot;updated&quot;:1662612096576,&quot;isDeleted&quot;:false}],&quot;created&quot;:1673913600000,&quot;updated&quot;:1673913600000},&quot;visitorInfo&quot;:{&quot;visitorId&quot;:57540,&quot;visitorRecordId&quot;:61347,&quot;visitorUUID&quot;:&quot;c1ad8e4f-6d1c-4978-83a7-723a52c0f1f8&quot;,&quot;name&quot;:&quot;Abu Taposh&quot;,&quot;email&quot;:&quot;hamidme101@gmail.com&quot;,&quot;phone&quot;:&quot;&quot;,&quot;visitorProfilePic&quot;:null,&quot;ip&quot;:null,&quot;platform&quot;:null,&quot;browserName&quot;:null,&quot;locationDto&quot;:{&quot;countryCode&quot;:&quot;-&quot;,&quot;country&quot;:&quot;-&quot;,&quot;city&quot;:&quot;-&quot;,&quot;latitude&quot;:&quot;0.0&quot;,&quot;longitude&quot;:&quot;0.0&quot;,&quot;region&quot;:&quot;-&quot;}},&quot;attributes&quot;:{},&quot;submittedFields&quot;:null,&quot;systemAttributes&quot;:{},&quot;customAttributes&quot;:{},&quot;messageInfo&quot;:{},&quot;resolvedById&quot;:null,&quot;resolvedBy&quot;:null,&quot;created&quot;:1721304727148,&quot;updated&quot;:1745997898431,&quot;submitTimestamp&quot;:1721304727148,&quot;serialNo&quot;:0,&quot;channel&quot;:null,&quot;hasNewMsg&quot;:false,&quot;previousId&quot;:&quot;439&quot;,&quot;firstResponseTime&quot;:0,&quot;initialResponseTime&quot;:0,&quot;resolutionTime&quot;:0}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.011</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>08:30:19.354 [print] {
+  &quot;status&quot;: &quot;success&quot;,
+  &quot;message&quot;: &quot;found&quot;,
+  &quot;body&quot;: {
+    &quot;id&quot;: &quot;681b1127b5c1704e019545cc&quot;,
+    &quot;accountId&quot;: &quot;5487987&quot;,
+    &quot;chatInfoId&quot;: null,
+    &quot;description&quot;: &quot;&lt;p&gt;Hello&lt;br&gt;How are you?&lt;br&gt;Would you please suggest me how to integrate instra&lt;/p&gt;&quot;,
+    &quot;descriptionText&quot;: null,
+    &quot;isDeleted&quot;: false,
+    &quot;subject&quot;: &quot;Need help to Instra integration&quot;,
+    &quot;assigneeId&quot;: 8564078,
+    &quot;assignee&quot;: {
+      &quot;id&quot;: 8564078,
+      &quot;accountId&quot;: &quot;5487987&quot;,
+      &quot;roleId&quot;: 1,
+      &quot;role&quot;: {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;Super Admin&quot;,
+        &quot;description&quot;: &quot;Reve Chat Super Administrator&quot;,
+        &quot;default&quot;: true
+      },
+      &quot;mailAddress&quot;: &quot;hamid40057@gmail.com&quot;,
+      &quot;mailServer&quot;: null,
+      &quot;designation&quot;: &quot;XYZ&quot;,
+      &quot;address&quot;: null,
+      &quot;phone&quot;: &quot;8801770991829&quot;,
+      &quot;additionalInfo&quot;: null,
+      &quot;onlineStatus&quot;: 0,
+      &quot;lastLoginTime&quot;: 1749607588254,
+      &quot;lastLogoutTime&quot;: 1749608086243,
+      &quot;lastName&quot;: &quot;Change&quot;,
+      &quot;firstName&quot;: &quot;Hamid&quot;,
+      &quot;concurrentChat&quot;: 5,
+      &quot;isPasswordChanged&quot;: 0,
+      &quot;updatedTime&quot;: 1682078868351,
+      &quot;isActive&quot;: true,
+      &quot;hasBotAccess&quot;: true,
+      &quot;hasBillingAccess&quot;: true,
+      &quot;userStatus&quot;: 0,
+      &quot;isDeleted&quot;: false,
+      &quot;isOnboardingDone&quot;: 1,
+      &quot;profilePictureURL&quot;: &quot;5487987-21b81a27-0d80-4f9b-a433-408eb0c81afb.png&quot;,
+      &quot;accCreatedTime&quot;: null,
+      &quot;departments&quot;: [
+        {
+          &quot;id&quot;: 1528,
+          &quot;name&quot;: &quot;test&quot;,
+          &quot;description&quot;: &quot;&quot;,
+          &quot;clOperatorCode&quot;: &quot;5487987&quot;
+        }
+      ],
+      &quot;fromAD&quot;: false
+    },
+    &quot;ticketStatusId&quot;: 3,
+    &quot;ticketStatus&quot;: {
+      &quot;id&quot;: 3,
+      &quot;accountId&quot;: &quot;&quot;,
+      &quot;agentStatusName&quot;: &quot;IN PROGRESS&quot;,
+      &quot;colorCode&quot;: &quot;#6C69F9&quot;,
+      &quot;category&quot;: &quot;IN_PROGRESS&quot;,
+      &quot;type&quot;: &quot;DEFAULT&quot;,
+      &quot;visitorStatusName&quot;: &quot;IN PROGRESS&quot;,
+      &quot;showVisitor&quot;: true,
+      &quot;notify&quot;: false,
+      &quot;notifyTo&quot;: [
+        &quot;VISITOR&quot;
+      ],
+      &quot;templateId&quot;: null,
+      &quot;template&quot;: null,
+      &quot;groupId&quot;: 1,
+      &quot;sortNo&quot;: 1,
+      &quot;isDefault&quot;: true,
+      &quot;created&quot;: 1662612096576,
+      &quot;updated&quot;: 1662612096576,
+      &quot;isDeleted&quot;: false
+    },
+    &quot;ticketPriorityId&quot;: 4,
+    &quot;ticketPriority&quot;: {
+      &quot;id&quot;: 4,
+      &quot;priorityName&quot;: &quot;LOW&quot;,
+      &quot;colorCode&quot;: &quot;#909FAC&quot;
+    },
+    &quot;statusCategory&quot;: &quot;IN_PROGRESS&quot;,
+    &quot;isSpammed&quot;: false,
+    &quot;attachments&quot;: [
+    ],
+    &quot;confirmationEmailStatus&quot;: &quot;DELIVERED&quot;,
+    &quot;creationSource&quot;: &quot;MANUAL&quot;,
+    &quot;visitorRecord&quot;: {
+      &quot;id&quot;: 61347,
+      &quot;visitorId&quot;: 57540,
+      &quot;sessionId&quot;: null,
+      &quot;ip&quot;: null,
+      &quot;platform&quot;: null,
+      &quot;browserName&quot;: null,
+      &quot;referral&quot;: null,
+      &quot;url&quot;: null,
+      &quot;visitCount&quot;: null,
+      &quot;viewsCount&quot;: null,
+      &quot;email&quot;: &quot;hamidme101@gmail.com&quot;,
+      &quot;phone&quot;: &quot;&quot;,
+      &quot;visitorOldName&quot;: null,
+      &quot;visitorNotes&quot;: null,
+      &quot;accountId&quot;: &quot;5487987&quot;,
+      &quot;preChatSurveyExtraFields&quot;: null,
+      &quot;postChatSurveyExtraFields&quot;: null,
+      &quot;deviceType&quot;: null,
+      &quot;visitorSource&quot;: null,
+      &quot;visitorName&quot;: &quot;Abu Taposh&quot;,
+      &quot;locationDto&quot;: {
+        &quot;countryCode&quot;: &quot;-&quot;,
+        &quot;country&quot;: &quot;-&quot;,
+        &quot;city&quot;: &quot;-&quot;,
+        &quot;latitude&quot;: &quot;0.0&quot;,
+        &quot;longitude&quot;: &quot;0.0&quot;,
+        &quot;region&quot;: &quot;-&quot;
+      },
+      &quot;visitorMediaId&quot;: null,
+      &quot;channelType&quot;: null,
+      &quot;visitorUUID&quot;: null
+    },
+    &quot;tagIds&quot;: [
+      1216,
+      1217
+    ],
+    &quot;creatorId&quot;: 1721304727148,
+    &quot;creator&quot;: null,
+    &quot;formId&quot;: null,
+    &quot;formsDTO&quot;: null,
+    &quot;ticketUUID&quot;: &quot;100072ca-7b1c-4aa6-8c9e-70de8d08313e&quot;,
+    &quot;ticketId&quot;: &quot;19&quot;,
+    &quot;mailMsgId&quot;: &quot;50daeb01-c486-4797-90fc-0c03c587aba2&quot;,
+    &quot;isOverDue&quot;: false,
+    &quot;dueDate&quot;: 1753984799999,
+    &quot;statusGroupId&quot;: 1,
+    &quot;statusGroupDTO&quot;: {
+      &quot;id&quot;: 1,
+      &quot;accountId&quot;: &quot;&quot;,
+      &quot;creator&quot;: {
+        &quot;id&quot;: 8563843,
+        &quot;accountId&quot;: &quot;4680608&quot;,
+        &quot;roleId&quot;: 1,
+        &quot;role&quot;: null,
+        &quot;mailAddress&quot;: &quot;revechat.test.pervez@gmail.com&quot;,
+        &quot;mailServer&quot;: null,
+        &quot;designation&quot;: &quot;&quot;,
+        &quot;address&quot;: null,
+        &quot;phone&quot;: &quot;8801726407234&quot;,
+        &quot;additionalInfo&quot;: null,
+        &quot;onlineStatus&quot;: 0,
+        &quot;lastLoginTime&quot;: 1748948264072,
+        &quot;lastLogoutTime&quot;: 1747458435510,
+        &quot;lastName&quot;: &quot;Islam Pervez&quot;,
+        &quot;firstName&quot;: &quot;Fokhrul&quot;,
+        &quot;concurrentChat&quot;: 3,
+        &quot;isPasswordChanged&quot;: 0,
+        &quot;updatedTime&quot;: 1678761828918,
+        &quot;isActive&quot;: true,
+        &quot;hasBotAccess&quot;: true,
+        &quot;hasBillingAccess&quot;: true,
+        &quot;userStatus&quot;: 0,
+        &quot;isDeleted&quot;: false,
+        &quot;isOnboardingDone&quot;: 1,
+        &quot;profilePictureURL&quot;: &quot;4680608-5ec02d4d-a252-41d2-852d-7160158f5c30.png&quot;,
+        &quot;password&quot;: null,
+        &quot;updatedPassword&quot;: null,
+        &quot;retypedUpdatedPassword&quot;: null,
+        &quot;sha1Password&quot;: null,
+        &quot;accCreatedTime&quot;: 1678761828000,
+        &quot;departments&quot;: [
+        ],
+        &quot;departmentIds&quot;: [
+        ],
+        &quot;profileStatus&quot;: 1,
+        &quot;fromAD&quot;: true
+      },
+      &quot;title&quot;: &quot;DEFAULT STATUS GROUP&quot;,
+      &quot;description&quot;: &quot;this is the default status group&quot;,
+      &quot;departments&quot;: [
+      ],
+      &quot;status&quot;: true,
+      &quot;isDefault&quot;: true,
+      &quot;statusList&quot;: [
+        {
+          &quot;id&quot;: 1,
+          &quot;accountId&quot;: &quot;&quot;,
+          &quot;agentStatusName&quot;: &quot;OPEN&quot;,
+          &quot;colorCode&quot;: &quot;#EE7D64&quot;,
+          &quot;category&quot;: &quot;OPEN&quot;,
+          &quot;type&quot;: &quot;DEFAULT&quot;,
+          &quot;visitorStatusName&quot;: &quot;OPEN&quot;,
+          &quot;showVisitor&quot;: true,
+          &quot;notify&quot;: true,
+          &quot;notifyTo&quot;: [
+            &quot;VISITOR&quot;
+          ],
+          &quot;templateId&quot;: null,
+          &quot;template&quot;: null,
+          &quot;groupId&quot;: 1,
+          &quot;sortNo&quot;: 1,
+          &quot;isDefault&quot;: true,
+          &quot;created&quot;: 1662612096576,
+          &quot;updated&quot;: 1662612096576,
+          &quot;isDeleted&quot;: false
+        },
+        {
+          &quot;id&quot;: 2,
+          &quot;accountId&quot;: &quot;&quot;,
+          &quot;agentStatusName&quot;: &quot;SOLVED&quot;,
+          &quot;colorCode&quot;: &quot;#18A326&quot;,
+          &quot;category&quot;: &quot;SOLVED&quot;,
+          &quot;type&quot;: &quot;DEFAULT&quot;,
+          &quot;visitorStatusName&quot;: &quot;SOLVED&quot;,
+          &quot;showVisitor&quot;: true,
+          &quot;notify&quot;: true,
+          &quot;notifyTo&quot;: [
+            &quot;VISITOR&quot;
+          ],
+          &quot;templateId&quot;: null,
+          &quot;template&quot;: null,
+          &quot;groupId&quot;: 1,
+          &quot;sortNo&quot;: 1,
+          &quot;isDefault&quot;: true,
+          &quot;created&quot;: 1662612096576,
+          &quot;updated&quot;: 1662612096576,
+          &quot;isDeleted&quot;: false
+        },
+        {
+          &quot;id&quot;: 3,
+          &quot;accountId&quot;: &quot;&quot;,
+          &quot;agentStatusName&quot;: &quot;IN PROGRESS&quot;,
+          &quot;colorCode&quot;: &quot;#6C69F9&quot;,
+          &quot;category&quot;: &quot;IN_PROGRESS&quot;,
+          &quot;type&quot;: &quot;DEFAULT&quot;,
+          &quot;visitorStatusName&quot;: &quot;IN PROGRESS&quot;,
+          &quot;showVisitor&quot;: true,
+          &quot;notify&quot;: false,
+          &quot;notifyTo&quot;: [
+            &quot;VISITOR&quot;
+          ],
+          &quot;templateId&quot;: null,
+          &quot;template&quot;: null,
+          &quot;groupId&quot;: 1,
+          &quot;sortNo&quot;: 1,
+          &quot;isDefault&quot;: true,
+          &quot;created&quot;: 1662612096576,
+          &quot;updated&quot;: 1662612096576,
+          &quot;isDeleted&quot;: false
+        }
+      ],
+      &quot;created&quot;: 1673913600000,
+      &quot;updated&quot;: 1673913600000
+    },
+    &quot;visitorInfo&quot;: {
+      &quot;visitorId&quot;: 57540,
+      &quot;visitorRecordId&quot;: 61347,
+      &quot;visitorUUID&quot;: &quot;c1ad8e4f-6d1c-4978-83a7-723a52c0f1f8&quot;,
+      &quot;name&quot;: &quot;Abu Taposh&quot;,
+      &quot;email&quot;: &quot;hamidme101@gmail.com&quot;,
+      &quot;phone&quot;: &quot;&quot;,
+      &quot;visitorProfilePic&quot;: null,
+      &quot;ip&quot;: null,
+      &quot;platform&quot;: null,
+      &quot;browserName&quot;: null,
+      &quot;locationDto&quot;: {
+        &quot;countryCode&quot;: &quot;-&quot;,
+        &quot;country&quot;: &quot;-&quot;,
+        &quot;city&quot;: &quot;-&quot;,
+        &quot;latitude&quot;: &quot;0.0&quot;,
+        &quot;longitude&quot;: &quot;0.0&quot;,
+        &quot;region&quot;: &quot;-&quot;
+      }
+    },
+    &quot;attributes&quot;: {
+    },
+    &quot;submittedFields&quot;: null,
+    &quot;systemAttributes&quot;: {
+    },
+    &quot;customAttributes&quot;: {
+    },
+    &quot;messageInfo&quot;: {
+    },
+    &quot;resolvedById&quot;: null,
+    &quot;resolvedBy&quot;: null,
+    &quot;created&quot;: 1721304727148,
+    &quot;updated&quot;: 1745997898431,
+    &quot;submitTimestamp&quot;: 1721304727148,
+    &quot;serialNo&quot;: 0,
+    &quot;channel&quot;: null,
+    &quot;hasNewMsg&quot;: false,
+    &quot;previousId&quot;: &quot;439&quot;,
+    &quot;firstResponseTime&quot;: 0,
+    &quot;initialResponseTime&quot;: 0,
+    &quot;resolutionTime&quot;: 0
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
