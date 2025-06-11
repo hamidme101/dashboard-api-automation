@@ -49,7 +49,7 @@ public class DemoTestParallel {
         jsonFiles.forEach(file -> jsonPaths.add(file.getAbsolutePath()));
 
         // ✅ Create a single merged file for Jenkins: target/cucumber.json
-        File mergedOutput = new File("target/cucumber-html-reports/cucumber.json");
+        File mergedOutput = new File("target/cucumber-html-reports/cucumber-html-reports/cucumber.json");
         try {
             FileUtils.write(mergedOutput, "", "UTF-8"); // clear file
             for (File file : jsonFiles) {
@@ -81,7 +81,7 @@ public class DemoTestParallel {
         }
 
         // ✅ This still generates the HTML report
-        Configuration config = new Configuration(new File("target/cucumber-html-reports/"), "demo");
+        Configuration config = new Configuration(new File("target/cucumber-html-reports/cucumber-html-reports/"), "demo");
         ReportBuilder reportBuilder = new ReportBuilder(jsonPaths, config);
         reportBuilder.generateReports();
     }
