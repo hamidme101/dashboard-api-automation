@@ -6,4 +6,4 @@ Scenario: Fetch single ticket by ID
   When method get
   Then status 200
   ## Then status 201
-  And print response
+  ## And print response
