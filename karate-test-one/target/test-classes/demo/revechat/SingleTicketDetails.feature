@@ -5,4 +5,5 @@ Scenario: Fetch single ticket by ID
   And header authorization = authToken
   When method get
   Then status 200
-  And print response
+  ## Then status 201
+  ## And print response
