@@ -6,8 +6,8 @@ function fn() {
   var config = {
      baseUrl: 'https://test-chat-022.revechat.com/rest/v1',
      authToken: 'eyJhbGciOiJIUzI1NiJ9.eyJhY2NvdW50SWQiOiI1NDg3OTg3Iiwic3ViIjoiYXV0aG9yaXphdGlvbiIsImV4cCI6MTc1MTg4NDA0MiwiaWF0IjoxNzQ5MjkyMDQyfQ.mCS1ZrMFhWqJyDAEf6-QYFfvZwHaXMmL7Dv0ydU300M',
-   //  demoBaseUrl: protocol + '://127.0.0.1:' + port
-   };
+     globalAuthToken: 'eyJhbGciOiJIUzI1NiJ9.eyJhY2NvdW50SWQiOiI1NDg3OTg3Iiwic3ViIjoiYXV0aG9yaXphdGlvbiIsImV4cCI6MTc1MjU2NDkxNCwidXNlcklkIjo4NTY0MDc4LCJpYXQiOjE3NDk5NzI5MTR9.W_f9mRkq_8agu4tgVRt_pfhgV1g2wpTP88rUHYIHheo' ,
+};
 
  /* var port = karate.properties['demo.server.port'] || '8080';
   var protocol = 'http';

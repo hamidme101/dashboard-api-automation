@@ -1,0 +1,24 @@
+{
+  "createFaq": {
+      "accountId": "5487987",
+      "botId": 13424,
+      "createdTime": 0,
+      "flowId": 0,
+      "height": 0,
+      "intentId": 0,
+      "isDeleted": 0,
+      "isUpdated": true,
+      "name": "Test-5",
+      "note": "This is test -5",
+      "positionX": 0,
+      "positionY": 0,
+      "response": "string",
+      "serialNo": 0,
+      "type": "FAQ",
+      "version": 0,
+      "width": 0
+      },
+"updateFaq": {
+
+  }
+}

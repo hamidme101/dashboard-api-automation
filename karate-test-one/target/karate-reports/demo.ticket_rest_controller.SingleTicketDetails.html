@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"40ff0715-c075-41a4-a2be-0b0124c4f3f5",karate_version:"1.5.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>demo.ticket_rest_controller.SingleTicketDetails</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div>demo</div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-06-23 01:23:09 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>Fetch single ticket by ID</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">demo/ticket_rest_controller/SingleTicketDetails.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Get Single Ticket Details</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name">Fetch single ticket by ID</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1694</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl + &#39;/external-ticket/681b1127b5c1704e019545cc&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">37</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header authorization = authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1653</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">13:23:02.934 request:
+1 &gt; GET https://test-chat-022.revechat.com/rest/v1/external-ticket/681b1127b5c1704e019545cc
+1 &gt; authorization: eyJhbGciOiJIUzI1NiJ9.eyJhY2NvdW50SWQiOiI1NDg3OTg3Iiwic3ViIjoiYXV0aG9yaXphdGlvbiIsImV4cCI6MTc1MTg4NDA0MiwiaWF0IjoxNzQ5MjkyMDQyfQ.mCS1ZrMFhWqJyDAEf6-QYFfvZwHaXMmL7Dv0ydU300M
+1 &gt; Host: test-chat-022.revechat.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.7)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:23:03.964 response time in milliseconds: 1023
+1 &lt; 200
+1 &lt; Server: nginx/1.20.1
+1 &lt; Date: Mon, 23 Jun 2025 07:23:04 GMT
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; Set-Cookie: revechatLocaleCookie=en; Max-Age=31536000; Expires=Tue, 23-Jun-2026 07:23:04 GMT; Path=/; SameSite=None
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+1 &lt; Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+{&quot;status&quot;:&quot;success&quot;,&quot;message&quot;:&quot;found&quot;,&quot;body&quot;:{&quot;id&quot;:&quot;681b1127b5c1704e019545cc&quot;,&quot;accountId&quot;:&quot;5487987&quot;,&quot;chatInfoId&quot;:null,&quot;description&quot;:&quot;&lt;p&gt;Hello&lt;br&gt;How are you?&lt;br&gt;Would you please suggest me how to integrate instra&lt;/p&gt;&quot;,&quot;descriptionText&quot;:null,&quot;isDeleted&quot;:true,&quot;subject&quot;:&quot;Need help to Instra integration&quot;,&quot;assigneeId&quot;:8564078,&quot;assignee&quot;:{&quot;id&quot;:8564078,&quot;accountId&quot;:&quot;5487987&quot;,&quot;roleId&quot;:1,&quot;role&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Super Admin&quot;,&quot;description&quot;:&quot;Reve Chat Super Administrator&quot;,&quot;default&quot;:true},&quot;mailAddress&quot;:&quot;hamid40057@gmail.com&quot;,&quot;mailServer&quot;:null,&quot;designation&quot;:&quot;XYZ&quot;,&quot;address&quot;:null,&quot;phone&quot;:&quot;8801770991829&quot;,&quot;additionalInfo&quot;:null,&quot;onlineStatus&quot;:0,&quot;lastLoginTime&quot;:1750659508693,&quot;lastLogoutTime&quot;:1750659382770,&quot;lastName&quot;:&quot;Change&quot;,&quot;firstName&quot;:&quot;Hamid&quot;,&quot;concurrentChat&quot;:5,&quot;isPasswordChanged&quot;:0,&quot;updatedTime&quot;:1682078868351,&quot;isActive&quot;:true,&quot;hasBotAccess&quot;:true,&quot;hasBillingAccess&quot;:true,&quot;userStatus&quot;:0,&quot;isDeleted&quot;:false,&quot;isOnboardingDone&quot;:1,&quot;profilePictureURL&quot;:&quot;5487987-21b81a27-0d80-4f9b-a433-408eb0c81afb.png&quot;,&quot;accCreatedTime&quot;:null,&quot;departments&quot;:[{&quot;id&quot;:1528,&quot;name&quot;:&quot;test&quot;,&quot;description&quot;:&quot;&quot;,&quot;clOperatorCode&quot;:&quot;5487987&quot;}],&quot;fromAD&quot;:false},&quot;ticketStatusId&quot;:3,&quot;ticketStatus&quot;:{&quot;id&quot;:3,&quot;accountId&quot;:&quot;&quot;,&quot;agentStatusName&quot;:&quot;IN PROGRESS&quot;,&quot;colorCode&quot;:&quot;#6C69F9&quot;,&quot;category&quot;:&quot;IN_PROGRESS&quot;,&quot;type&quot;:&quot;DEFAULT&quot;,&quot;visitorStatusName&quot;:&quot;IN PROGRESS&quot;,&quot;showVisitor&quot;:true,&quot;notify&quot;:false,&quot;notifyTo&quot;:[&quot;VISITOR&quot;],&quot;templateId&quot;:null,&quot;template&quot;:null,&quot;groupId&quot;:1,&quot;sortNo&quot;:1,&quot;isDefault&quot;:true,&quot;created&quot;:1662612096576,&quot;updated&quot;:1662612096576,&quot;isDeleted&quot;:false},&quot;ticketPriorityId&quot;:4,&quot;ticketPriority&quot;:{&quot;id&quot;:4,&quot;priorityName&quot;:&quot;LOW&quot;,&quot;colorCode&quot;:&quot;#909FAC&quot;},&quot;statusCategory&quot;:&quot;IN_PROGRESS&quot;,&quot;isSpammed&quot;:true,&quot;attachments&quot;:[],&quot;confirmationEmailStatus&quot;:&quot;DELIVERED&quot;,&quot;creationSource&quot;:&quot;MANUAL&quot;,&quot;visitorRecord&quot;:{&quot;id&quot;:61347,&quot;visitorId&quot;:57540,&quot;sessionId&quot;:null,&quot;ip&quot;:null,&quot;platform&quot;:null,&quot;browserName&quot;:null,&quot;referral&quot;:null,&quot;url&quot;:null,&quot;visitCount&quot;:null,&quot;viewsCount&quot;:null,&quot;email&quot;:&quot;hamidme101@gmail.com&quot;,&quot;phone&quot;:&quot;&quot;,&quot;visitorOldName&quot;:null,&quot;visitorNotes&quot;:null,&quot;accountId&quot;:&quot;5487987&quot;,&quot;preChatSurveyExtraFields&quot;:null,&quot;postChatSurveyExtraFields&quot;:null,&quot;deviceType&quot;:null,&quot;visitorSource&quot;:null,&quot;visitorName&quot;:&quot;Abu Taposh&quot;,&quot;locationDto&quot;:{&quot;countryCode&quot;:&quot;-&quot;,&quot;country&quot;:&quot;-&quot;,&quot;city&quot;:&quot;-&quot;,&quot;latitude&quot;:&quot;0.0&quot;,&quot;longitude&quot;:&quot;0.0&quot;,&quot;region&quot;:&quot;-&quot;},&quot;visitorMediaId&quot;:null,&quot;channelType&quot;:null,&quot;visitorUUID&quot;:null},&quot;tagIds&quot;:[1216,1217],&quot;creatorId&quot;:1721304727148,&quot;creator&quot;:null,&quot;formId&quot;:null,&quot;formsDTO&quot;:null,&quot;ticketUUID&quot;:&quot;100072ca-7b1c-4aa6-8c9e-70de8d08313e&quot;,&quot;ticketId&quot;:&quot;19&quot;,&quot;mailMsgId&quot;:&quot;50daeb01-c486-4797-90fc-0c03c587aba2&quot;,&quot;isOverDue&quot;:false,&quot;dueDate&quot;:1753984799999,&quot;statusGroupId&quot;:1,&quot;statusGroupDTO&quot;:{&quot;id&quot;:1,&quot;accountId&quot;:&quot;&quot;,&quot;creator&quot;:{&quot;id&quot;:8563843,&quot;accountId&quot;:&quot;4680608&quot;,&quot;roleId&quot;:1,&quot;role&quot;:null,&quot;mailAddress&quot;:&quot;revechat.test.pervez@gmail.com&quot;,&quot;mailServer&quot;:null,&quot;designation&quot;:&quot;&quot;,&quot;address&quot;:null,&quot;phone&quot;:&quot;8801726407234&quot;,&quot;additionalInfo&quot;:null,&quot;onlineStatus&quot;:0,&quot;lastLoginTime&quot;:1748948264072,&quot;lastLogoutTime&quot;:1747458435510,&quot;lastName&quot;:&quot;Islam Pervez&quot;,&quot;firstName&quot;:&quot;Fokhrul&quot;,&quot;concurrentChat&quot;:3,&quot;isPasswordChanged&quot;:0,&quot;updatedTime&quot;:1678761828918,&quot;isActive&quot;:true,&quot;hasBotAccess&quot;:true,&quot;hasBillingAccess&quot;:true,&quot;userStatus&quot;:0,&quot;isDeleted&quot;:false,&quot;isOnboardingDone&quot;:1,&quot;profilePictureURL&quot;:&quot;4680608-5ec02d4d-a252-41d2-852d-7160158f5c30.png&quot;,&quot;password&quot;:null,&quot;updatedPassword&quot;:null,&quot;retypedUpdatedPassword&quot;:null,&quot;sha1Password&quot;:null,&quot;accCreatedTime&quot;:1678761828000,&quot;departments&quot;:[],&quot;departmentIds&quot;:[],&quot;profileStatus&quot;:1,&quot;fromAD&quot;:true},&quot;title&quot;:&quot;DEFAULT STATUS GROUP&quot;,&quot;description&quot;:&quot;this is the default status group&quot;,&quot;departments&quot;:[],&quot;status&quot;:true,&quot;isDefault&quot;:true,&quot;statusList&quot;:[{&quot;id&quot;:1,&quot;accountId&quot;:&quot;&quot;,&quot;agentStatusName&quot;:&quot;OPEN&quot;,&quot;colorCode&quot;:&quot;#EE7D64&quot;,&quot;category&quot;:&quot;OPEN&quot;,&quot;type&quot;:&quot;DEFAULT&quot;,&quot;visitorStatusName&quot;:&quot;OPEN&quot;,&quot;showVisitor&quot;:true,&quot;notify&quot;:true,&quot;notifyTo&quot;:[&quot;VISITOR&quot;],&quot;templateId&quot;:null,&quot;template&quot;:null,&quot;groupId&quot;:1,&quot;sortNo&quot;:1,&quot;isDefault&quot;:true,&quot;created&quot;:1662612096576,&quot;updated&quot;:1662612096576,&quot;isDeleted&quot;:false},{&quot;id&quot;:2,&quot;accountId&quot;:&quot;&quot;,&quot;agentStatusName&quot;:&quot;SOLVED&quot;,&quot;colorCode&quot;:&quot;#18A326&quot;,&quot;category&quot;:&quot;SOLVED&quot;,&quot;type&quot;:&quot;DEFAULT&quot;,&quot;visitorStatusName&quot;:&quot;SOLVED&quot;,&quot;showVisitor&quot;:true,&quot;notify&quot;:true,&quot;notifyTo&quot;:[&quot;VISITOR&quot;],&quot;templateId&quot;:null,&quot;template&quot;:null,&quot;groupId&quot;:1,&quot;sortNo&quot;:1,&quot;isDefault&quot;:true,&quot;created&quot;:1662612096576,&quot;updated&quot;:1662612096576,&quot;isDeleted&quot;:false},{&quot;id&quot;:3,&quot;accountId&quot;:&quot;&quot;,&quot;agentStatusName&quot;:&quot;IN PROGRESS&quot;,&quot;colorCode&quot;:&quot;#6C69F9&quot;,&quot;category&quot;:&quot;IN_PROGRESS&quot;,&quot;type&quot;:&quot;DEFAULT&quot;,&quot;visitorStatusName&quot;:&quot;IN PROGRESS&quot;,&quot;showVisitor&quot;:true,&quot;notify&quot;:false,&quot;notifyTo&quot;:[&quot;VISITOR&quot;],&quot;templateId&quot;:null,&quot;template&quot;:null,&quot;groupId&quot;:1,&quot;sortNo&quot;:1,&quot;isDefault&quot;:true,&quot;created&quot;:1662612096576,&quot;updated&quot;:1662612096576,&quot;isDeleted&quot;:false}],&quot;created&quot;:1673913600000,&quot;updated&quot;:1673913600000},&quot;visitorInfo&quot;:{&quot;visitorId&quot;:57540,&quot;visitorRecordId&quot;:61347,&quot;visitorUUID&quot;:&quot;c1ad8e4f-6d1c-4978-83a7-723a52c0f1f8&quot;,&quot;name&quot;:&quot;Abu Taposh&quot;,&quot;email&quot;:&quot;hamidme101@gmail.com&quot;,&quot;phone&quot;:&quot;&quot;,&quot;visitorProfilePic&quot;:null,&quot;ip&quot;:null,&quot;platform&quot;:null,&quot;browserName&quot;:null,&quot;locationDto&quot;:{&quot;countryCode&quot;:&quot;-&quot;,&quot;country&quot;:&quot;-&quot;,&quot;city&quot;:&quot;-&quot;,&quot;latitude&quot;:&quot;0.0&quot;,&quot;longitude&quot;:&quot;0.0&quot;,&quot;region&quot;:&quot;-&quot;}},&quot;attributes&quot;:{},&quot;submittedFields&quot;:null,&quot;systemAttributes&quot;:{},&quot;customAttributes&quot;:{},&quot;messageInfo&quot;:{},&quot;resolvedById&quot;:null,&quot;resolvedBy&quot;:null,&quot;created&quot;:1721304727148,&quot;updated&quot;:1750088454106,&quot;submitTimestamp&quot;:1721304727148,&quot;serialNo&quot;:0,&quot;channel&quot;:null,&quot;hasNewMsg&quot;:false,&quot;previousId&quot;:&quot;439&quot;,&quot;firstResponseTime&quot;:0,&quot;initialResponseTime&quot;:0,&quot;resolutionTime&quot;:0}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

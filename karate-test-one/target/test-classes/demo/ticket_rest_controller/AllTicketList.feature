@@ -9,5 +9,5 @@ Scenario: Fetch all tickets with pagination.
   And param pageSize = '10'
   When method get
   Then status 200
-  # Then status 201
+  ## Then status 201
   ## And print response

@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: demo/ticket_rest_controller/CreateTicket.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>demo</td>
+      <td>23 Jun 2025, 13:23</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">demo/ticket_rest_controller/CreateTicket.feature</td>
+          <td      class="passed"    >23</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">23</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="4189692400">4.189</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">demo/ticket_rest_controller/CreateTicket.feature</span>
+
+
+</div>
+
+        <div class="description indention">Create Ticket via REVE Chat API</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.324</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestPayload = read('classpath:demo/ticket_rest_controller/data/create-ticket-request.json')</span>
+
+  <span class="lead-duration duration">0.178</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def JsonModifier = Java.type('demo.ticket_rest_controller.util.JsonModifier')</span>
+
+  <span class="lead-duration duration">0.032</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def subject = JsonModifier.generateRandomSubject()</span>
+
+  <span class="lead-duration duration">0.008</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def email = 'dynamic.email@example.com'</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def visitorName = 'Hamid Khan-5'</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def modifiedJson = JsonModifier.updateField(requestPayload, 'ticket_subject', subject)</span>
+
+  <span class="lead-duration duration">0.079</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def modifiedJson = JsonModifier.updateField(requestPayload, 'ticket_recipient_email', email)</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def modifiedJson = JsonModifier.updateField(requestPayload, 'ticket_recipient_name', visitorName)</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Accept = '*/*'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Authorization = globalAuthToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header User-Agent = 'REVECHAT-MOBILE-APP'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Cookie = 'JSESSIONID=YjA5OTQyNDMtMGJlMi00YmQ5LWE0OGYtNTcxNmY1YTllNjhh; revechatLocaleCookie=en'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">3.865</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Create a new support ticket</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-3" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-4">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-4" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/ticket'</span>
+
+  <span class="lead-duration duration">0.010</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request requestPayload</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">3.830</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>13:23:02.934 request:
+1 &gt; POST https://test-chat-022.revechat.com/rest/v1/ticket
+1 &gt; Accept: */*
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Authorization: eyJhbGciOiJIUzI1NiJ9.eyJhY2NvdW50SWQiOiI1NDg3OTg3Iiwic3ViIjoiYXV0aG9yaXphdGlvbiIsImV4cCI6MTc1MjU2NDkxNCwidXNlcklkIjo4NTY0MDc4LCJpYXQiOjE3NDk5NzI5MTR9.W_f9mRkq_8agu4tgVRt_pfhgV1g2wpTP88rUHYIHheo
+1 &gt; User-Agent: REVECHAT-MOBILE-APP
+1 &gt; Cookie: JSESSIONID=YjA5OTQyNDMtMGJlMi00YmQ5LWE0OGYtNTcxNmY1YTllNjhh; revechatLocaleCookie=en
+1 &gt; Content-Length: 1453
+1 &gt; Host: test-chat-022.revechat.com
+1 &gt; Connection: Keep-Alive
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;accountId&quot;:&quot;5487987&quot;,&quot;attachments&quot;:[],&quot;confirmationEmailStatus&quot;:&quot;TO_SEND&quot;,&quot;creationSource&quot;:&quot;MANUAL&quot;,&quot;creatorId&quot;:8564078,&quot;description&quot;:&quot;&quot;,&quot;hasNewMsg&quot;:true,&quot;subject&quot;:&quot;Test ticket 2&quot;,&quot;tagIds&quot;:[],&quot;ticketCreationType&quot;:&quot;OUTBOUND&quot;,&quot;visitorRecordId&quot;:394810,&quot;vsVisitorId&quot;:null,&quot;ticketPriorityId&quot;:5,&quot;ticketStatusId&quot;:1,&quot;dueDate&quot;:null,&quot;timeZoneOffset&quot;:-360,&quot;chatInfoId&quot;:null,&quot;assigneeId&quot;:null,&quot;formUUID&quot;:&quot;c2790ef9-afb7-45a6-b467-d5c383f4160c&quot;,&quot;fields&quot;:[{&quot;key&quot;:&quot;Recipient Name&quot;,&quot;value&quot;:&quot;Hamid Khan-5&quot;,&quot;attribute&quot;:&quot;ticket_recipient_name&quot;,&quot;id&quot;:&quot;809e7330-5975-4a42-bdd0-e52173a877b8&quot;,&quot;valueLabel&quot;:&quot;Hamid Khan-5&quot;},{&quot;key&quot;:&quot;Recipient Email&quot;,&quot;value&quot;:&quot;dynamic.email@example.com&quot;,&quot;attribute&quot;:&quot;ticket_recipient_email&quot;,&quot;id&quot;:&quot;775a33ba-46dd-4fa4-97db-cf948f789dcf&quot;,&quot;valueLabel&quot;:&quot;dynamic.email@example.com&quot;},{&quot;key&quot;:&quot;Select area where you are facing the problem&quot;,&quot;value&quot;:&quot;&quot;,&quot;attribute&quot;:&quot;problem_area&quot;,&quot;id&quot;:&quot;7617b061-8f44-51e2-41b0-04d009d51b3f&quot;,&quot;valueLabel&quot;:&quot;&quot;},{&quot;key&quot;:&quot;Subject&quot;,&quot;value&quot;:&quot;Test ticket 71880&quot;,&quot;attribute&quot;:&quot;ticket_subject&quot;,&quot;id&quot;:&quot;f780bd4c-b3e1-455f-94f0-56e7d9016f74&quot;,&quot;valueLabel&quot;:&quot;Test ticket 71880&quot;},{&quot;key&quot;:&quot;Description&quot;,&quot;value&quot;:&quot;&lt;p&gt;This is test ticket -2&lt;\/p&gt;&quot;,&quot;attribute&quot;:&quot;ticket_description&quot;,&quot;id&quot;:&quot;d824e5bc-40d6-486e-a34d-9c8537d071ff&quot;,&quot;valueLabel&quot;:&quot;This is test ticket -2&quot;},{&quot;key&quot;:&quot;Upload a reference&quot;,&quot;value&quot;:&quot;&quot;,&quot;attribute&quot;:&quot;attached_reference&quot;,&quot;id&quot;:&quot;a061a98c-92bc-3c45-8b18-c4e7fee43c0a&quot;,&quot;valueLabel&quot;:&quot;&quot;}],&quot;visitorUUID&quot;:&quot;0425d804-5d19-48ed-97c2-bbfc0a79be8f&quot;}
+
+13:23:06.432 response time in milliseconds: 3494
+1 &lt; 200
+1 &lt; Server: nginx/1.20.1
+1 &lt; Date: Mon, 23 Jun 2025 07:23:06 GMT
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; Set-Cookie: revechatLocaleCookie=en; Max-Age=31536000; Expires=Tue, 23-Jun-2026 07:23:04 GMT; Path=/; SameSite=None
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+1 &lt; Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+{&quot;status&quot;:&quot;success&quot;,&quot;message&quot;:&quot;created&quot;,&quot;body&quot;:{&quot;id&quot;:&quot;685900d8b409065ef4a638c2&quot;,&quot;accountId&quot;:&quot;5487987&quot;,&quot;chatInfoId&quot;:null,&quot;description&quot;:&quot;&lt;p&gt;This is test ticket -2&lt;/p&gt;&quot;,&quot;descriptionText&quot;:&quot;This is test ticket -2&quot;,&quot;isDeleted&quot;:false,&quot;subject&quot;:&quot;Test ticket 71880&quot;,&quot;assigneeId&quot;:null,&quot;statusId&quot;:276,&quot;statusCategory&quot;:&quot;OPEN&quot;,&quot;isSpammed&quot;:false,&quot;attachments&quot;:[],&quot;confirmationEmailStatus&quot;:&quot;TO_SEND&quot;,&quot;creationSource&quot;:&quot;MANUAL&quot;,&quot;tagIds&quot;:[],&quot;creatorId&quot;:8564078,&quot;formId&quot;:35,&quot;ticketUUID&quot;:&quot;f440c136-4657-413c-ab29-aa4594666858&quot;,&quot;ticketId&quot;:&quot;86&quot;,&quot;mailMsgId&quot;:null,&quot;priorityId&quot;:5,&quot;isOverDue&quot;:false,&quot;dueDate&quot;:null,&quot;statusGroupId&quot;:44,&quot;visitorInfo&quot;:{&quot;visitorId&quot;:391051,&quot;visitorRecordId&quot;:394810,&quot;visitorUUID&quot;:&quot;0425d804-5d19-48ed-97c2-bbfc0a79be8f&quot;,&quot;name&quot;:&quot;Hamid Khan-5&quot;,&quot;email&quot;:&quot;dynamic.email@example.com&quot;,&quot;phone&quot;:null,&quot;visitorProfilePic&quot;:null,&quot;ip&quot;:null,&quot;platform&quot;:null,&quot;browserName&quot;:null,&quot;locationDto&quot;:{&quot;countryCode&quot;:&quot;-&quot;,&quot;country&quot;:&quot;-&quot;,&quot;city&quot;:&quot;-&quot;,&quot;latitude&quot;:&quot;0.0&quot;,&quot;longitude&quot;:&quot;0.0&quot;,&quot;region&quot;:&quot;-&quot;}},&quot;attributes&quot;:{&quot;ticket_recipient_name&quot;:{&quot;key&quot;:null,&quot;value&quot;:&quot;Hamid Khan-5&quot;,&quot;attribute&quot;:&quot;ticket_recipient_name&quot;,&quot;type&quot;:&quot;recipientName&quot;,&quot;ratingScale&quot;:null,&quot;ratingShape&quot;:null,&quot;format&quot;:null,&quot;valueLabel&quot;:&quot;Hamid Khan-5&quot;,&quot;id&quot;:&quot;809e7330-5975-4a42-bdd0-e52173a877b8&quot;},&quot;attached_reference&quot;:{&quot;key&quot;:null,&quot;value&quot;:&quot;&quot;,&quot;attribute&quot;:&quot;attached_reference&quot;,&quot;type&quot;:&quot;fileUpload&quot;,&quot;ratingScale&quot;:null,&quot;ratingShape&quot;:null,&quot;format&quot;:null,&quot;valueLabel&quot;:&quot;&quot;,&quot;id&quot;:&quot;a061a98c-92bc-3c45-8b18-c4e7fee43c0a&quot;},&quot;ticket_subject&quot;:{&quot;key&quot;:null,&quot;value&quot;:&quot;Test ticket 71880&quot;,&quot;attribute&quot;:&quot;ticket_subject&quot;,&quot;type&quot;:&quot;subject&quot;,&quot;ratingScale&quot;:null,&quot;ratingShape&quot;:null,&quot;format&quot;:null,&quot;valueLabel&quot;:&quot;Test ticket 71880&quot;,&quot;id&quot;:&quot;f780bd4c-b3e1-455f-94f0-56e7d9016f74&quot;},&quot;problem_area&quot;:{&quot;key&quot;:null,&quot;value&quot;:&quot;&quot;,&quot;attribute&quot;:&quot;problem_area&quot;,&quot;type&quot;:&quot;dropdown&quot;,&quot;ratingScale&quot;:null,&quot;ratingShape&quot;:null,&quot;format&quot;:null,&quot;valueLabel&quot;:&quot;&quot;,&quot;id&quot;:&quot;7617b061-8f44-51e2-41b0-04d009d51b3f&quot;},&quot;ticket_recipient_email&quot;:{&quot;key&quot;:null,&quot;value&quot;:&quot;dynamic.email@example.com&quot;,&quot;attribute&quot;:&quot;ticket_recipient_email&quot;,&quot;type&quot;:&quot;recipientEmail&quot;,&quot;ratingScale&quot;:null,&quot;ratingShape&quot;:null,&quot;format&quot;:null,&quot;valueLabel&quot;:&quot;dynamic.email@example.com&quot;,&quot;id&quot;:&quot;775a33ba-46dd-4fa4-97db-cf948f789dcf&quot;},&quot;ticket_description&quot;:{&quot;key&quot;:null,&quot;value&quot;:&quot;&lt;p&gt;This is test ticket -2&lt;/p&gt;&quot;,&quot;attribute&quot;:&quot;ticket_description&quot;,&quot;type&quot;:&quot;description&quot;,&quot;ratingScale&quot;:null,&quot;ratingShape&quot;:null,&quot;format&quot;:null,&quot;valueLabel&quot;:&quot;This is test ticket -2&quot;,&quot;id&quot;:&quot;d824e5bc-40d6-486e-a34d-9c8537d071ff&quot;}},&quot;submittedFields&quot;:&quot;[{\&quot;key\&quot;:\&quot;Recipient Name\&quot;,\&quot;value\&quot;:\&quot;Hamid Khan-5\&quot;,\&quot;attribute\&quot;:\&quot;ticket_recipient_name\&quot;,\&quot;id\&quot;:\&quot;809e7330-5975-4a42-bdd0-e52173a877b8\&quot;,\&quot;valueLabel\&quot;:\&quot;Hamid Khan-5\&quot;},{\&quot;key\&quot;:\&quot;Recipient Email\&quot;,\&quot;value\&quot;:\&quot;dynamic.email@example.com\&quot;,\&quot;attribute\&quot;:\&quot;ticket_recipient_email\&quot;,\&quot;id\&quot;:\&quot;775a33ba-46dd-4fa4-97db-cf948f789dcf\&quot;,\&quot;valueLabel\&quot;:\&quot;dynamic.email@example.com\&quot;},{\&quot;key\&quot;:\&quot;Select area where you are facing the problem\&quot;,\&quot;value\&quot;:\&quot;\&quot;,\&quot;attribute\&quot;:\&quot;problem_area\&quot;,\&quot;id\&quot;:\&quot;7617b061-8f44-51e2-41b0-04d009d51b3f\&quot;,\&quot;valueLabel\&quot;:\&quot;\&quot;},{\&quot;key\&quot;:\&quot;Subject\&quot;,\&quot;value\&quot;:\&quot;Test ticket 71880\&quot;,\&quot;attribute\&quot;:\&quot;ticket_subject\&quot;,\&quot;id\&quot;:\&quot;f780bd4c-b3e1-455f-94f0-56e7d9016f74\&quot;,\&quot;valueLabel\&quot;:\&quot;Test ticket 71880\&quot;},{\&quot;key\&quot;:\&quot;Description\&quot;,\&quot;value\&quot;:\&quot;&lt;p&gt;This is test ticket -2&lt;/p&gt;\&quot;,\&quot;attribute\&quot;:\&quot;ticket_description\&quot;,\&quot;id\&quot;:\&quot;d824e5bc-40d6-486e-a34d-9c8537d071ff\&quot;,\&quot;valueLabel\&quot;:\&quot;This is test ticket -2\&quot;},{\&quot;key\&quot;:\&quot;Upload a reference\&quot;,\&quot;value\&quot;:\&quot;\&quot;,\&quot;attribute\&quot;:\&quot;attached_reference\&quot;,\&quot;id\&quot;:\&quot;a061a98c-92bc-3c45-8b18-c4e7fee43c0a\&quot;,\&quot;valueLabel\&quot;:\&quot;\&quot;}]&quot;,&quot;systemAttributes&quot;:{&quot;{{ticket_due_date}}&quot;:&quot;&quot;,&quot;{{ticket_description}}&quot;:&quot;&lt;p&gt;This is test ticket -2&lt;/p&gt;&quot;,&quot;{{ticket_last_updated}}&quot;:&quot;23-Jun-25 07:23:06 AM&quot;,&quot;{{ticket_status}}&quot;:&quot;Open&quot;,&quot;{{ticket_recipient_email}}&quot;:&quot;dynamic.email@example.com&quot;,&quot;{{ticket_subject}}&quot;:&quot;Test ticket 71880&quot;,&quot;{{ticket_source}}&quot;:&quot;MANUAL&quot;,&quot;{{ticket_type}}&quot;:&quot;OUTBOUND&quot;,&quot;{{ticket_recipient_name}}&quot;:&quot;Hamid Khan-5&quot;,&quot;{{ticket_visitor_status}}&quot;:&quot;Open visitor &quot;,&quot;{{ticket_creation_date}}&quot;:&quot;23-Jun-25 07:23:04 AM&quot;,&quot;{{ticket_priority}}&quot;:&quot;MEDIUM&quot;,&quot;{{ticket_id}}&quot;:&quot;86&quot;,&quot;{{database_id}}&quot;:&quot;TICKET_ID=f440c136-4657-413c-ab29-aa4594666858#&quot;,&quot;{{ticket_status_group}}&quot;:&quot;Nazmul &quot;,&quot;{{ticket_channel}}&quot;:&quot;test2@inbound-staging.revechat.com&quot;},&quot;customAttributes&quot;:{&quot;{{problem_area}}&quot;:&quot;&quot;,&quot;{{attached_reference}}&quot;:&quot;&quot;},&quot;messageInfo&quot;:{&quot;lastOpenTime&quot;:1750663384350},&quot;resolvedBy&quot;:null,&quot;created&quot;:1750663384350,&quot;updated&quot;:1750663384350,&quot;submitTimestamp&quot;:1750663384324,&quot;inReplyTo&quot;:null,&quot;reference&quot;:null,&quot;ticketCreationType&quot;:&quot;OUTBOUND&quot;,&quot;threadId&quot;:null,&quot;hasNewMsg&quot;:null,&quot;emailChannel&quot;:&quot;test2@inbound-staging.revechat.com&quot;,&quot;firstResponseTimestamp&quot;:0,&quot;reOpened&quot;:false,&quot;assigneeChanged&quot;:false,&quot;resolutionTime&quot;:0,&quot;totalResponseTime&quot;:0,&quot;totalPairCount&quot;:0,&quot;totalHandlingTime&quot;:0,&quot;initialResponseTime&quot;:0,&quot;serialNo&quot;:0}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseBody = response.body</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match responseBody.accountId == &quot;5487987&quot;</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match responseBody.subject == subject</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match responseBody.visitorInfo.email == email</span>
+
+  <span class="lead-duration duration">0.012</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match responseBody.visitorInfo.name == visitorName</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

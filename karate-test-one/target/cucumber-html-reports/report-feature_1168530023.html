@@ -1,0 +1,1542 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: demo/bot_info_rest_controller/BotInfo.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>demo</td>
+      <td>23 Jun 2025, 13:23</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">demo/bot_info_rest_controller/BotInfo.feature</td>
+          <td      class="passed"    >36</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">36</td>
+
+          <td  class="passed"    >2</td>
+          <td >0</td>
+          <td class="total">2</td>
+
+          <td class="duration" data-value="3543263000">3.543</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">demo/bot_info_rest_controller/BotInfo.feature</span>
+
+
+</div>
+
+        <div class="description indention">Get All BOT Info</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.289</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def botPayload = read('classpath:demo/bot_info_rest_controller/data/botInfo.json')</span>
+
+  <span class="lead-duration duration">0.179</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def addFaqPayload = botPayload.createFaq</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def JsonModifier = Java.type('demo.bot_info_rest_controller.util.JsonModifier')</span>
+
+  <span class="lead-duration duration">0.019</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def updated = JsonModifier.updateFaqName(botPayload)</span>
+
+  <span class="lead-duration duration">0.066</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def modifiedFaqName = updated.createFaq.name</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print modifiedFaqName</span>
+
+  <span class="lead-duration duration">0.009</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>13:23:02.554 [print] FAQ-Test-25918 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Accept = '*/*'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Authorization = globalAuthToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header User-Agent = 'REVECHAT-MOBILE-APP'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Cookie = 'JSESSIONID=YjA5OTQyNDMtMGJlMi00YmQ5LWE0OGYtNTcxNmY1YTllNjhh; revechatLocaleCookie=en'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">1.531</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Fetch all BOT.</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url baseUrl + '/bot-info/5487987'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">1.519</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>13:23:02.935 request:
+1 &gt; GET https://test-chat-022.revechat.com/rest/v1/bot-info/5487987
+1 &gt; Accept: */*
+1 &gt; Content-Type: application/json
+1 &gt; Authorization: eyJhbGciOiJIUzI1NiJ9.eyJhY2NvdW50SWQiOiI1NDg3OTg3Iiwic3ViIjoiYXV0aG9yaXphdGlvbiIsImV4cCI6MTc1MjU2NDkxNCwidXNlcklkIjo4NTY0MDc4LCJpYXQiOjE3NDk5NzI5MTR9.W_f9mRkq_8agu4tgVRt_pfhgV1g2wpTP88rUHYIHheo
+1 &gt; User-Agent: REVECHAT-MOBILE-APP
+1 &gt; Cookie: JSESSIONID=YjA5OTQyNDMtMGJlMi00YmQ5LWE0OGYtNTcxNmY1YTllNjhh; revechatLocaleCookie=en
+1 &gt; Host: test-chat-022.revechat.com
+1 &gt; Connection: Keep-Alive
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:23:04.042 response time in milliseconds: 1040
+1 &lt; 200
+1 &lt; Server: nginx/1.20.1
+1 &lt; Date: Mon, 23 Jun 2025 07:23:04 GMT
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; Set-Cookie: revechatLocaleCookie=en; Max-Age=31536000; Expires=Tue, 23-Jun-2026 07:23:04 GMT; Path=/; SameSite=None
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+1 &lt; Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+{&quot;status&quot;:&quot;success&quot;,&quot;message&quot;:&quot;found&quot;,&quot;body&quot;:[{&quot;id&quot;:13427,&quot;accountId&quot;:&quot;5487987&quot;,&quot;botUUId&quot;:&quot;3600345a-c37b-4a9d-85cd-150e1d352f4a&quot;,&quot;botName&quot;:&quot;Inital BOT&quot;,&quot;lastUpdate&quot;:1750222378131,&quot;avatarName&quot;:&quot;BOT-Avatar-101.png&quot;,&quot;enabledSocialChannels&quot;:[&quot;FACEBOOK&quot;,&quot;INSTAGRAM&quot;],&quot;sampleBot&quot;:0,&quot;displayName&quot;:&quot;Inital BOT&quot;,&quot;tagLine&quot;:null,&quot;triggerEvent&quot;:{&quot;event&quot;:{&quot;name&quot;:&quot;click&quot;,&quot;payload&quot;:{&quot;time&quot;:null,&quot;url&quot;:null,&quot;isExactMatch&quot;:null}},&quot;priority&quot;:{&quot;option&quot;:2},&quot;online&quot;:null,&quot;offline&quot;:null},&quot;isWebChannelEnabled&quot;:0,&quot;isDraft&quot;:0,&quot;fallbackSettings&quot;:{&quot;default_message&quot;:&quot;&#1593;&#1584;&#1585;&#1575;&#1611;! &#1605;&#1575; &#1586;&#1604;&#1578;&#1615; &#1571;&#1578;&#1593;&#1604;&#1605; :) &#1607;&#1604; &#1610;&#1605;&#1603;&#1606;&#1603; &#1578;&#1608;&#1590;&#1610;&#1581; &#1575;&#1587;&#1578;&#1601;&#1587;&#1575;&#1585;&#1603; &#1571;&#1603;&#1579;&#1585;&#1567;\n&quot;,&quot;failed_to_answer&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;repeat_query&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;trigger_flow_on_chat_close&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;offline_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;online_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;satisfaction_survey&quot;:{&quot;type&quot;:&quot;CLOSE_CHAT&quot;,&quot;message&quot;:&quot;&#1578;&#1605; &#1573;&#1594;&#1604;&#1575;&#1602; &#1575;&#1604;&#1580;&#1604;&#1587;&#1577; &#1578;&#1604;&#1602;&#1575;&#1574;&#1610;&#1611;&#1575; &#1576;&#1587;&#1576;&#1576; &#1593;&#1583;&#1605; &#1575;&#1604;&#1606;&#1588;&#1575;&#1591;.\n&quot;,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:&quot;5&quot;,&quot;enabled&quot;:false},&quot;sentiment&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;authInfoDto&quot;:{&quot;maxExpiryMinutes&quot;:3,&quot;otpNode&quot;:-1,&quot;authRequiredType&quot;:&quot;ONCE&quot;,&quot;enabled&quot;:false}},&quot;googleLogin&quot;:{&quot;authCode&quot;:null,&quot;email&quot;:null,&quot;fullName&quot;:null,&quot;refreshToken&quot;:null,&quot;accessToken&quot;:null,&quot;botId&quot;:null},&quot;botAccuracyLevel&quot;:0.5,&quot;greetingMessage&quot;:null,&quot;languageMessage&quot;:&quot;{\&quot;message\&quot;:\&quot;\&quot;,\&quot;title\&quot;:\&quot;\&quot;,\&quot;code\&quot;:\&quot;bn\&quot;}&quot;,&quot;isDeleted&quot;:false,&quot;metaInfo&quot;:null,&quot;isBotEnabled&quot;:0,&quot;webpageSettings&quot;:&quot;{\&quot;triggerFor\&quot;:\&quot;all\&quot;,\&quot;isTriggerByClickingBanner\&quot;:true,\&quot;isTriggerBasedOnDuration\&quot;:false,\&quot;triggerDuration\&quot;:0}&quot;,&quot;isMobileSdkChannelEnabled&quot;:null,&quot;isKnowledgebaseConnected&quot;:0,&quot;buildWith&quot;:&quot;CUSTOM&quot;,&quot;startNodeId&quot;:586713,&quot;positionX&quot;:-264.88,&quot;positionY&quot;:-5.27,&quot;languageCode&quot;:&quot;ar&quot;,&quot;isUpdated&quot;:false,&quot;version&quot;:1,&quot;assignedDepartments&quot;:[]},{&quot;id&quot;:13425,&quot;accountId&quot;:&quot;5487987&quot;,&quot;botUUId&quot;:&quot;9195d502-93f3-4cc0-96e1-eeb520b09aed&quot;,&quot;botName&quot;:&quot;Test for testing_copy_copy_copy&quot;,&quot;lastUpdate&quot;:1750157303117,&quot;avatarName&quot;:&quot;BOT-Avatar-101.png&quot;,&quot;enabledSocialChannels&quot;:[&quot;INSTAGRAM&quot;],&quot;sampleBot&quot;:0,&quot;displayName&quot;:&quot;Test for testing&quot;,&quot;tagLine&quot;:null,&quot;triggerEvent&quot;:{&quot;event&quot;:{&quot;name&quot;:&quot;click&quot;,&quot;payload&quot;:{&quot;time&quot;:null,&quot;url&quot;:null,&quot;isExactMatch&quot;:null}},&quot;priority&quot;:{&quot;option&quot;:2},&quot;online&quot;:null,&quot;offline&quot;:null},&quot;isWebChannelEnabled&quot;:0,&quot;isDraft&quot;:0,&quot;fallbackSettings&quot;:{&quot;default_message&quot;:&quot;Sorry! I am still learning :) Can you please be more specific to your query?&quot;,&quot;failed_to_answer&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;repeat_query&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;trigger_flow_on_chat_close&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:584339,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;offline_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;online_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;satisfaction_survey&quot;:{&quot;type&quot;:&quot;CLOSE_CHAT&quot;,&quot;message&quot;:&quot;Session has been closed automatically due to inactivity.&quot;,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:&quot;60&quot;,&quot;enabled&quot;:true},&quot;sentiment&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;authInfoDto&quot;:{&quot;maxExpiryMinutes&quot;:3,&quot;otpNode&quot;:null,&quot;authRequiredType&quot;:&quot;ONCE&quot;,&quot;enabled&quot;:false}},&quot;googleLogin&quot;:{&quot;authCode&quot;:null,&quot;email&quot;:null,&quot;fullName&quot;:null,&quot;refreshToken&quot;:null,&quot;accessToken&quot;:null,&quot;botId&quot;:null},&quot;botAccuracyLevel&quot;:0.5,&quot;greetingMessage&quot;:null,&quot;languageMessage&quot;:&quot;{\&quot;message\&quot;:\&quot;\&quot;,\&quot;title\&quot;:\&quot;\&quot;,\&quot;code\&quot;:\&quot;bn\&quot;}&quot;,&quot;isDeleted&quot;:false,&quot;metaInfo&quot;:null,&quot;isBotEnabled&quot;:0,&quot;webpageSettings&quot;:&quot;{\&quot;triggerFor\&quot;:\&quot;all\&quot;,\&quot;isTriggerByClickingBanner\&quot;:true,\&quot;isTriggerBasedOnDuration\&quot;:false,\&quot;triggerDuration\&quot;:0}&quot;,&quot;isMobileSdkChannelEnabled&quot;:1,&quot;isKnowledgebaseConnected&quot;:0,&quot;buildWith&quot;:&quot;CUSTOM&quot;,&quot;startNodeId&quot;:586692,&quot;positionX&quot;:-733.88,&quot;positionY&quot;:2119.29,&quot;languageCode&quot;:&quot;en_GB&quot;,&quot;isUpdated&quot;:false,&quot;version&quot;:4,&quot;assignedDepartments&quot;:[]},{&quot;id&quot;:13424,&quot;accountId&quot;:&quot;5487987&quot;,&quot;botUUId&quot;:&quot;823658b7-7265-4ef7-98da-ef3464c5a5ff&quot;,&quot;botName&quot;:&quot;Test Automation&quot;,&quot;lastUpdate&quot;:1750143601714,&quot;avatarName&quot;:&quot;BOT-Avatar-101.png&quot;,&quot;enabledSocialChannels&quot;:[],&quot;sampleBot&quot;:0,&quot;displayName&quot;:&quot;Test Automation&quot;,&quot;tagLine&quot;:null,&quot;triggerEvent&quot;:{&quot;event&quot;:{&quot;name&quot;:&quot;click&quot;,&quot;payload&quot;:{&quot;time&quot;:null,&quot;url&quot;:null,&quot;isExactMatch&quot;:null}},&quot;priority&quot;:{&quot;option&quot;:2},&quot;online&quot;:null,&quot;offline&quot;:null},&quot;isWebChannelEnabled&quot;:0,&quot;isDraft&quot;:0,&quot;fallbackSettings&quot;:{&quot;default_message&quot;:&quot;Sorry! I am still learning :) Can you please be more specific to your query?&quot;,&quot;failed_to_answer&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;repeat_query&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;trigger_flow_on_chat_close&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;offline_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;online_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;satisfaction_survey&quot;:{&quot;type&quot;:&quot;CLOSE_CHAT&quot;,&quot;message&quot;:&quot;This chat session has been closed due to long period of unavailability.&quot;,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:&quot;5&quot;,&quot;enabled&quot;:false},&quot;sentiment&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;authInfoDto&quot;:{&quot;maxExpiryMinutes&quot;:null,&quot;otpNode&quot;:-1,&quot;authRequiredType&quot;:null,&quot;enabled&quot;:false}},&quot;googleLogin&quot;:{&quot;authCode&quot;:null,&quot;email&quot;:null,&quot;fullName&quot;:null,&quot;refreshToken&quot;:null,&quot;accessToken&quot;:null,&quot;botId&quot;:null},&quot;botAccuracyLevel&quot;:0.5,&quot;greetingMessage&quot;:null,&quot;languageMessage&quot;:&quot;{\&quot;message\&quot;:\&quot;\&quot;,\&quot;title\&quot;:\&quot;\&quot;,\&quot;code\&quot;:\&quot;bn\&quot;}&quot;,&quot;isDeleted&quot;:false,&quot;metaInfo&quot;:null,&quot;isBotEnabled&quot;:0,&quot;webpageSettings&quot;:&quot;{\&quot;triggerFor\&quot;:\&quot;all\&quot;,\&quot;isTriggerByClickingBanner\&quot;:true,\&quot;isTriggerBasedOnDuration\&quot;:false,\&quot;triggerDuration\&quot;:0}&quot;,&quot;isMobileSdkChannelEnabled&quot;:0,&quot;isKnowledgebaseConnected&quot;:0,&quot;buildWith&quot;:&quot;GEN_AI&quot;,&quot;startNodeId&quot;:586602,&quot;positionX&quot;:-187.31,&quot;positionY&quot;:-7.32,&quot;languageCode&quot;:&quot;en&quot;,&quot;isUpdated&quot;:false,&quot;version&quot;:0,&quot;assignedDepartments&quot;:[]},{&quot;id&quot;:13293,&quot;accountId&quot;:&quot;5487987&quot;,&quot;botUUId&quot;:&quot;bf08c021-cdc7-4255-8d83-54c85b7208b2&quot;,&quot;botName&quot;:&quot;Hamid-Test-3&quot;,&quot;lastUpdate&quot;:1745307017903,&quot;avatarName&quot;:&quot;BOT-Avatar-101.png&quot;,&quot;enabledSocialChannels&quot;:[],&quot;sampleBot&quot;:0,&quot;displayName&quot;:&quot;Hamid-Test-3-d&quot;,&quot;tagLine&quot;:null,&quot;triggerEvent&quot;:{&quot;event&quot;:{&quot;name&quot;:&quot;click&quot;,&quot;payload&quot;:{&quot;time&quot;:null,&quot;url&quot;:null,&quot;isExactMatch&quot;:null}},&quot;priority&quot;:{&quot;option&quot;:2},&quot;online&quot;:null,&quot;offline&quot;:null},&quot;isWebChannelEnabled&quot;:0,&quot;isDraft&quot;:1,&quot;fallbackSettings&quot;:{&quot;default_message&quot;:&quot;Sorry! I am still learning :) Can you please be more specific to your query?&quot;,&quot;failed_to_answer&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;repeat_query&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;trigger_flow_on_chat_close&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;offline_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;online_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;satisfaction_survey&quot;:{&quot;type&quot;:&quot;CLOSE_CHAT&quot;,&quot;message&quot;:&quot;This chat session has been closed due to long period of unavailability.&quot;,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:&quot;5&quot;,&quot;enabled&quot;:false},&quot;sentiment&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;authInfoDto&quot;:{&quot;maxExpiryMinutes&quot;:null,&quot;otpNode&quot;:-1,&quot;authRequiredType&quot;:null,&quot;enabled&quot;:false}},&quot;googleLogin&quot;:{&quot;authCode&quot;:null,&quot;email&quot;:null,&quot;fullName&quot;:null,&quot;refreshToken&quot;:null,&quot;accessToken&quot;:null,&quot;botId&quot;:null},&quot;botAccuracyLevel&quot;:0.5,&quot;greetingMessage&quot;:null,&quot;languageMessage&quot;:&quot;{\&quot;message\&quot;:\&quot;\&quot;,\&quot;title\&quot;:\&quot;\&quot;,\&quot;code\&quot;:\&quot;bn\&quot;}&quot;,&quot;isDeleted&quot;:false,&quot;metaInfo&quot;:null,&quot;isBotEnabled&quot;:0,&quot;webpageSettings&quot;:&quot;{\&quot;triggerFor\&quot;:\&quot;all\&quot;,\&quot;isTriggerByClickingBanner\&quot;:true,\&quot;isTriggerBasedOnDuration\&quot;:false,\&quot;triggerDuration\&quot;:0}&quot;,&quot;isMobileSdkChannelEnabled&quot;:0,&quot;isKnowledgebaseConnected&quot;:0,&quot;buildWith&quot;:&quot;CUSTOM&quot;,&quot;startNodeId&quot;:585909,&quot;positionX&quot;:-660.55,&quot;positionY&quot;:-73.38,&quot;languageCode&quot;:&quot;en&quot;,&quot;isUpdated&quot;:false,&quot;version&quot;:0,&quot;assignedDepartments&quot;:[]},{&quot;id&quot;:13291,&quot;accountId&quot;:&quot;5487987&quot;,&quot;botUUId&quot;:&quot;8cd5c1ee-606e-41db-a3bb-634d042842b2&quot;,&quot;botName&quot;:&quot;Hamid-Test Name&quot;,&quot;lastUpdate&quot;:1750221100988,&quot;avatarName&quot;:&quot;BOT-Avatar-101.png&quot;,&quot;enabledSocialChannels&quot;:[&quot;WHATSAPP&quot;,&quot;INSTAGRAM&quot;,&quot;FACEBOOK&quot;],&quot;sampleBot&quot;:0,&quot;displayName&quot;:&quot;Hamid-Test Display&quot;,&quot;tagLine&quot;:null,&quot;triggerEvent&quot;:{&quot;event&quot;:{&quot;name&quot;:&quot;click&quot;,&quot;payload&quot;:{&quot;time&quot;:null,&quot;url&quot;:null,&quot;isExactMatch&quot;:null}},&quot;priority&quot;:{&quot;option&quot;:2},&quot;online&quot;:null,&quot;offline&quot;:null},&quot;isWebChannelEnabled&quot;:1,&quot;isDraft&quot;:0,&quot;fallbackSettings&quot;:{&quot;default_message&quot;:&quot;Sorry! I am still learning :) Can you please be more specific to your query?&quot;,&quot;failed_to_answer&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;repeat_query&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;trigger_flow_on_chat_close&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;offline_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;online_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;satisfaction_survey&quot;:{&quot;type&quot;:&quot;CLOSE_CHAT&quot;,&quot;message&quot;:&quot;This chat session has been closed due to long period of unavailability.&quot;,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:&quot;5&quot;,&quot;enabled&quot;:false},&quot;sentiment&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;authInfoDto&quot;:{&quot;maxExpiryMinutes&quot;:null,&quot;otpNode&quot;:-1,&quot;authRequiredType&quot;:null,&quot;enabled&quot;:false}},&quot;googleLogin&quot;:{&quot;authCode&quot;:null,&quot;email&quot;:null,&quot;fullName&quot;:null,&quot;refreshToken&quot;:null,&quot;accessToken&quot;:null,&quot;botId&quot;:null},&quot;botAccuracyLevel&quot;:0.5,&quot;greetingMessage&quot;:null,&quot;languageMessage&quot;:&quot;{\&quot;message\&quot;:\&quot;\&quot;,\&quot;title\&quot;:\&quot;\&quot;,\&quot;code\&quot;:\&quot;bn\&quot;}&quot;,&quot;isDeleted&quot;:false,&quot;metaInfo&quot;:null,&quot;isBotEnabled&quot;:0,&quot;webpageSettings&quot;:&quot;{\&quot;triggerFor\&quot;:\&quot;all\&quot;,\&quot;isTriggerByClickingBanner\&quot;:true,\&quot;isTriggerBasedOnDuration\&quot;:false,\&quot;triggerDuration\&quot;:0}&quot;,&quot;isMobileSdkChannelEnabled&quot;:0,&quot;isKnowledgebaseConnected&quot;:0,&quot;buildWith&quot;:&quot;CUSTOM&quot;,&quot;startNodeId&quot;:585876,&quot;positionX&quot;:-3858.64,&quot;positionY&quot;:-306.27,&quot;languageCode&quot;:&quot;en&quot;,&quot;isUpdated&quot;:false,&quot;version&quot;:0,&quot;assignedDepartments&quot;:[]},{&quot;id&quot;:13280,&quot;accountId&quot;:&quot;5487987&quot;,&quot;botUUId&quot;:&quot;1e355efc-ee3e-4816-95dd-68972a9ba95a&quot;,&quot;botName&quot;:&quot;llm-bot_copy&quot;,&quot;lastUpdate&quot;:1748852889629,&quot;avatarName&quot;:&quot;BOT-Avatar-101.png&quot;,&quot;enabledSocialChannels&quot;:[&quot;INSTAGRAM&quot;,&quot;VIBER&quot;],&quot;sampleBot&quot;:0,&quot;displayName&quot;:&quot;llm-bot&quot;,&quot;tagLine&quot;:&quot;llm-bot&quot;,&quot;triggerEvent&quot;:{&quot;event&quot;:{&quot;name&quot;:&quot;click&quot;,&quot;payload&quot;:{&quot;time&quot;:null,&quot;url&quot;:null,&quot;isExactMatch&quot;:null}},&quot;priority&quot;:{&quot;option&quot;:2},&quot;online&quot;:null,&quot;offline&quot;:null},&quot;isWebChannelEnabled&quot;:0,&quot;isDraft&quot;:0,&quot;fallbackSettings&quot;:{&quot;default_message&quot;:&quot;Sorry! I am still learning :) Can you please be more specific to your query?&quot;,&quot;failed_to_answer&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;repeat_query&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;trigger_flow_on_chat_close&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;offline_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;online_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;satisfaction_survey&quot;:{&quot;type&quot;:&quot;CLOSE_CHAT&quot;,&quot;message&quot;:&quot;This chat session has been closed due to long period of unavailability.&quot;,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:&quot;5&quot;,&quot;enabled&quot;:false},&quot;sentiment&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;authInfoDto&quot;:{&quot;maxExpiryMinutes&quot;:null,&quot;otpNode&quot;:null,&quot;authRequiredType&quot;:null,&quot;enabled&quot;:false}},&quot;googleLogin&quot;:{&quot;authCode&quot;:null,&quot;email&quot;:null,&quot;fullName&quot;:null,&quot;refreshToken&quot;:null,&quot;accessToken&quot;:null,&quot;botId&quot;:null},&quot;botAccuracyLevel&quot;:0.5,&quot;greetingMessage&quot;:null,&quot;languageMessage&quot;:&quot;{\&quot;message\&quot;:\&quot;\&quot;,\&quot;title\&quot;:\&quot;\&quot;,\&quot;code\&quot;:\&quot;bn\&quot;}&quot;,&quot;isDeleted&quot;:false,&quot;metaInfo&quot;:null,&quot;isBotEnabled&quot;:0,&quot;webpageSettings&quot;:&quot;{\&quot;triggerFor\&quot;:\&quot;all\&quot;,\&quot;isTriggerByClickingBanner\&quot;:true,\&quot;isTriggerBasedOnDuration\&quot;:false,\&quot;triggerDuration\&quot;:0}&quot;,&quot;isMobileSdkChannelEnabled&quot;:0,&quot;isKnowledgebaseConnected&quot;:1,&quot;buildWith&quot;:&quot;GEN_AI&quot;,&quot;startNodeId&quot;:585758,&quot;positionX&quot;:47.32,&quot;positionY&quot;:378.22,&quot;languageCode&quot;:&quot;en&quot;,&quot;isUpdated&quot;:false,&quot;version&quot;:0,&quot;assignedDepartments&quot;:[]},{&quot;id&quot;:13268,&quot;accountId&quot;:&quot;5487987&quot;,&quot;botUUId&quot;:&quot;8f541a18-0640-4cc6-8a51-4b675c858120&quot;,&quot;botName&quot;:&quot;test-3&quot;,&quot;lastUpdate&quot;:1748852647306,&quot;avatarName&quot;:&quot;BOT-Avatar-101.png&quot;,&quot;enabledSocialChannels&quot;:[],&quot;sampleBot&quot;:0,&quot;displayName&quot;:&quot;test-3&quot;,&quot;tagLine&quot;:null,&quot;triggerEvent&quot;:{&quot;event&quot;:{&quot;name&quot;:&quot;click&quot;,&quot;payload&quot;:{&quot;time&quot;:null,&quot;url&quot;:null,&quot;isExactMatch&quot;:null}},&quot;priority&quot;:{&quot;option&quot;:2},&quot;online&quot;:null,&quot;offline&quot;:null},&quot;isWebChannelEnabled&quot;:1,&quot;isDraft&quot;:0,&quot;fallbackSettings&quot;:{&quot;default_message&quot;:&quot;Sorry! I am still learning :) Can you please be more specific to your query?&quot;,&quot;failed_to_answer&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;repeat_query&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;trigger_flow_on_chat_close&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;offline_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;online_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;satisfaction_survey&quot;:{&quot;type&quot;:&quot;CLOSE_CHAT&quot;,&quot;message&quot;:&quot;This chat session has been closed due to long period of unavailability.&quot;,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:&quot;5&quot;,&quot;enabled&quot;:false},&quot;sentiment&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;authInfoDto&quot;:{&quot;maxExpiryMinutes&quot;:null,&quot;otpNode&quot;:-1,&quot;authRequiredType&quot;:null,&quot;enabled&quot;:false}},&quot;googleLogin&quot;:{&quot;authCode&quot;:null,&quot;email&quot;:null,&quot;fullName&quot;:null,&quot;refreshToken&quot;:null,&quot;accessToken&quot;:null,&quot;botId&quot;:null},&quot;botAccuracyLevel&quot;:0.5,&quot;greetingMessage&quot;:null,&quot;languageMessage&quot;:&quot;{\&quot;message\&quot;:\&quot;\&quot;,\&quot;title\&quot;:\&quot;\&quot;,\&quot;code\&quot;:\&quot;bn\&quot;}&quot;,&quot;isDeleted&quot;:false,&quot;metaInfo&quot;:null,&quot;isBotEnabled&quot;:0,&quot;webpageSettings&quot;:&quot;{\&quot;triggerFor\&quot;:\&quot;all\&quot;,\&quot;isTriggerByClickingBanner\&quot;:true,\&quot;isTriggerBasedOnDuration\&quot;:false,\&quot;triggerDuration\&quot;:0}&quot;,&quot;isMobileSdkChannelEnabled&quot;:0,&quot;isKnowledgebaseConnected&quot;:1,&quot;buildWith&quot;:&quot;CUSTOM&quot;,&quot;startNodeId&quot;:585814,&quot;positionX&quot;:-132.82,&quot;positionY&quot;:-111.13,&quot;languageCode&quot;:&quot;en&quot;,&quot;isUpdated&quot;:false,&quot;version&quot;:0,&quot;assignedDepartments&quot;:[]},{&quot;id&quot;:13265,&quot;accountId&quot;:&quot;5487987&quot;,&quot;botUUId&quot;:&quot;7991f0d8-a6e1-4c7e-82eb-db974fb48a74&quot;,&quot;botName&quot;:&quot;test-2&quot;,&quot;lastUpdate&quot;:1742096878996,&quot;avatarName&quot;:&quot;BOT-Avatar-101.png&quot;,&quot;enabledSocialChannels&quot;:[],&quot;sampleBot&quot;:0,&quot;displayName&quot;:&quot;test-2&quot;,&quot;tagLine&quot;:null,&quot;triggerEvent&quot;:{&quot;event&quot;:{&quot;name&quot;:&quot;click&quot;,&quot;payload&quot;:{&quot;time&quot;:null,&quot;url&quot;:null,&quot;isExactMatch&quot;:null}},&quot;priority&quot;:{&quot;option&quot;:2},&quot;online&quot;:null,&quot;offline&quot;:null},&quot;isWebChannelEnabled&quot;:1,&quot;isDraft&quot;:0,&quot;fallbackSettings&quot;:{&quot;default_message&quot;:&quot;Sorry! I am still learning :) Can you please be more specific to your query?&quot;,&quot;failed_to_answer&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;repeat_query&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;trigger_flow_on_chat_close&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;offline_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;online_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;satisfaction_survey&quot;:{&quot;type&quot;:&quot;CLOSE_CHAT&quot;,&quot;message&quot;:&quot;Session has been closed automatically due to inactivity.&quot;,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:&quot;3660&quot;,&quot;enabled&quot;:true},&quot;sentiment&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;authInfoDto&quot;:{&quot;maxExpiryMinutes&quot;:3,&quot;otpNode&quot;:-1,&quot;authRequiredType&quot;:&quot;ONCE&quot;,&quot;enabled&quot;:false}},&quot;googleLogin&quot;:{&quot;authCode&quot;:null,&quot;email&quot;:null,&quot;fullName&quot;:null,&quot;refreshToken&quot;:null,&quot;accessToken&quot;:null,&quot;botId&quot;:null},&quot;botAccuracyLevel&quot;:0.5,&quot;greetingMessage&quot;:null,&quot;languageMessage&quot;:&quot;{\&quot;message\&quot;:\&quot;\&quot;,\&quot;title\&quot;:\&quot;\&quot;,\&quot;code\&quot;:\&quot;bn\&quot;}&quot;,&quot;isDeleted&quot;:false,&quot;metaInfo&quot;:null,&quot;isBotEnabled&quot;:0,&quot;webpageSettings&quot;:&quot;{\&quot;triggerFor\&quot;:\&quot;all\&quot;,\&quot;isTriggerByClickingBanner\&quot;:true,\&quot;isTriggerBasedOnDuration\&quot;:false,\&quot;triggerDuration\&quot;:0}&quot;,&quot;isMobileSdkChannelEnabled&quot;:0,&quot;isKnowledgebaseConnected&quot;:0,&quot;buildWith&quot;:&quot;CUSTOM&quot;,&quot;startNodeId&quot;:585638,&quot;positionX&quot;:-597.82,&quot;positionY&quot;:1185.49,&quot;languageCode&quot;:&quot;en&quot;,&quot;isUpdated&quot;:false,&quot;version&quot;:2,&quot;assignedDepartments&quot;:[]},{&quot;id&quot;:13257,&quot;accountId&quot;:&quot;5487987&quot;,&quot;botUUId&quot;:&quot;e794ea13-6d3e-4841-a777-ec0be359401b&quot;,&quot;botName&quot;:&quot;llm-bot&quot;,&quot;lastUpdate&quot;:1742875094498,&quot;avatarName&quot;:&quot;BOT-Avatar-101.png&quot;,&quot;enabledSocialChannels&quot;:[],&quot;sampleBot&quot;:0,&quot;displayName&quot;:&quot;llm-bot&quot;,&quot;tagLine&quot;:&quot;llm-bot&quot;,&quot;triggerEvent&quot;:{&quot;event&quot;:{&quot;name&quot;:&quot;click&quot;,&quot;payload&quot;:{&quot;time&quot;:null,&quot;url&quot;:null,&quot;isExactMatch&quot;:null}},&quot;priority&quot;:{&quot;option&quot;:2},&quot;online&quot;:null,&quot;offline&quot;:null},&quot;isWebChannelEnabled&quot;:0,&quot;isDraft&quot;:1,&quot;fallbackSettings&quot;:{&quot;default_message&quot;:&quot;Sorry! I am still learning :) Can you please be more specific to your query?&quot;,&quot;failed_to_answer&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;repeat_query&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;trigger_flow_on_chat_close&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;offline_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;online_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;satisfaction_survey&quot;:{&quot;type&quot;:&quot;CLOSE_CHAT&quot;,&quot;message&quot;:&quot;This chat session has been closed due to long period of unavailability.&quot;,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:&quot;5&quot;,&quot;enabled&quot;:false},&quot;sentiment&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;authInfoDto&quot;:{&quot;maxExpiryMinutes&quot;:null,&quot;otpNode&quot;:-1,&quot;authRequiredType&quot;:null,&quot;enabled&quot;:false}},&quot;googleLogin&quot;:{&quot;authCode&quot;:null,&quot;email&quot;:null,&quot;fullName&quot;:null,&quot;refreshToken&quot;:null,&quot;accessToken&quot;:null,&quot;botId&quot;:null},&quot;botAccuracyLevel&quot;:0.5,&quot;greetingMessage&quot;:null,&quot;languageMessage&quot;:&quot;{\&quot;message\&quot;:\&quot;\&quot;,\&quot;title\&quot;:\&quot;\&quot;,\&quot;code\&quot;:\&quot;bn\&quot;}&quot;,&quot;isDeleted&quot;:false,&quot;metaInfo&quot;:null,&quot;isBotEnabled&quot;:0,&quot;webpageSettings&quot;:&quot;{\&quot;triggerFor\&quot;:\&quot;all\&quot;,\&quot;isTriggerByClickingBanner\&quot;:true,\&quot;isTriggerBasedOnDuration\&quot;:false,\&quot;triggerDuration\&quot;:0}&quot;,&quot;isMobileSdkChannelEnabled&quot;:0,&quot;isKnowledgebaseConnected&quot;:1,&quot;buildWith&quot;:&quot;GEN_AI&quot;,&quot;startNodeId&quot;:585545,&quot;positionX&quot;:150.0,&quot;positionY&quot;:116.0,&quot;languageCode&quot;:&quot;en&quot;,&quot;isUpdated&quot;:false,&quot;version&quot;:0,&quot;assignedDepartments&quot;:[]},{&quot;id&quot;:13254,&quot;accountId&quot;:&quot;5487987&quot;,&quot;botUUId&quot;:&quot;0dac9dad-b759-4c3d-a1b0-eb4ff4f822c5&quot;,&quot;botName&quot;:&quot;Nazmul&quot;,&quot;lastUpdate&quot;:1739617128312,&quot;avatarName&quot;:&quot;BOT-Avatar-101.png&quot;,&quot;enabledSocialChannels&quot;:[],&quot;sampleBot&quot;:0,&quot;displayName&quot;:&quot;Nazmul&quot;,&quot;tagLine&quot;:null,&quot;triggerEvent&quot;:{&quot;event&quot;:{&quot;name&quot;:&quot;click&quot;,&quot;payload&quot;:{&quot;time&quot;:null,&quot;url&quot;:null,&quot;isExactMatch&quot;:null}},&quot;priority&quot;:{&quot;option&quot;:2},&quot;online&quot;:null,&quot;offline&quot;:null},&quot;isWebChannelEnabled&quot;:1,&quot;isDraft&quot;:0,&quot;fallbackSettings&quot;:{&quot;default_message&quot;:&quot;Sorry! I am still learning :) Can you please be more specific to your query?&quot;,&quot;failed_to_answer&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;repeat_query&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;trigger_flow_on_chat_close&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;offline_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;online_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;satisfaction_survey&quot;:{&quot;type&quot;:&quot;CLOSE_CHAT&quot;,&quot;message&quot;:&quot;This chat session has been closed due to long period of unavailability.&quot;,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:&quot;5&quot;,&quot;enabled&quot;:false},&quot;sentiment&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;authInfoDto&quot;:{&quot;maxExpiryMinutes&quot;:null,&quot;otpNode&quot;:-1,&quot;authRequiredType&quot;:null,&quot;enabled&quot;:false}},&quot;googleLogin&quot;:{&quot;authCode&quot;:null,&quot;email&quot;:null,&quot;fullName&quot;:null,&quot;refreshToken&quot;:null,&quot;accessToken&quot;:null,&quot;botId&quot;:null},&quot;botAccuracyLevel&quot;:0.5,&quot;greetingMessage&quot;:null,&quot;languageMessage&quot;:&quot;{\&quot;message\&quot;:\&quot;\&quot;,\&quot;title\&quot;:\&quot;\&quot;,\&quot;code\&quot;:\&quot;bn\&quot;}&quot;,&quot;isDeleted&quot;:false,&quot;metaInfo&quot;:null,&quot;isBotEnabled&quot;:0,&quot;webpageSettings&quot;:&quot;{\&quot;triggerFor\&quot;:\&quot;all\&quot;,\&quot;isTriggerByClickingBanner\&quot;:true,\&quot;isTriggerBasedOnDuration\&quot;:false,\&quot;triggerDuration\&quot;:0}&quot;,&quot;isMobileSdkChannelEnabled&quot;:0,&quot;isKnowledgebaseConnected&quot;:0,&quot;buildWith&quot;:&quot;CUSTOM&quot;,&quot;startNodeId&quot;:585505,&quot;positionX&quot;:204.46,&quot;positionY&quot;:136.91,&quot;languageCode&quot;:&quot;en_US&quot;,&quot;isUpdated&quot;:false,&quot;version&quot;:0,&quot;assignedDepartments&quot;:[]},{&quot;id&quot;:13224,&quot;accountId&quot;:&quot;5487987&quot;,&quot;botUUId&quot;:&quot;9d7f80cc-ada1-4b55-8cd4-94a0611df6a8&quot;,&quot;botName&quot;:&quot;Test for testing_copy_copy&quot;,&quot;lastUpdate&quot;:1750570530892,&quot;avatarName&quot;:&quot;BOT-Avatar-101.png&quot;,&quot;enabledSocialChannels&quot;:[],&quot;sampleBot&quot;:0,&quot;displayName&quot;:&quot;Test for testing&quot;,&quot;tagLine&quot;:null,&quot;triggerEvent&quot;:{&quot;event&quot;:{&quot;name&quot;:&quot;click&quot;,&quot;payload&quot;:{&quot;time&quot;:null,&quot;url&quot;:null,&quot;isExactMatch&quot;:null}},&quot;priority&quot;:{&quot;option&quot;:2},&quot;online&quot;:null,&quot;offline&quot;:null},&quot;isWebChannelEnabled&quot;:0,&quot;isDraft&quot;:1,&quot;fallbackSettings&quot;:{&quot;default_message&quot;:&quot;Sorry! I am still learning :) Can you please be more specific to your query?&quot;,&quot;failed_to_answer&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;repeat_query&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;trigger_flow_on_chat_close&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:584339,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;offline_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;online_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;satisfaction_survey&quot;:{&quot;type&quot;:&quot;CLOSE_CHAT&quot;,&quot;message&quot;:&quot;Session has been closed automatically due to inactivity.&quot;,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:&quot;60&quot;,&quot;enabled&quot;:true},&quot;sentiment&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;authInfoDto&quot;:{&quot;maxExpiryMinutes&quot;:3,&quot;otpNode&quot;:-1,&quot;authRequiredType&quot;:&quot;ONCE&quot;,&quot;enabled&quot;:false}},&quot;googleLogin&quot;:{&quot;authCode&quot;:null,&quot;email&quot;:null,&quot;fullName&quot;:null,&quot;refreshToken&quot;:null,&quot;accessToken&quot;:null,&quot;botId&quot;:null},&quot;botAccuracyLevel&quot;:0.5,&quot;greetingMessage&quot;:null,&quot;languageMessage&quot;:&quot;{\&quot;message\&quot;:\&quot;\&quot;,\&quot;title\&quot;:\&quot;\&quot;,\&quot;code\&quot;:\&quot;bn\&quot;}&quot;,&quot;isDeleted&quot;:false,&quot;metaInfo&quot;:null,&quot;isBotEnabled&quot;:0,&quot;webpageSettings&quot;:&quot;{\&quot;triggerFor\&quot;:\&quot;all\&quot;,\&quot;isTriggerByClickingBanner\&quot;:true,\&quot;isTriggerBasedOnDuration\&quot;:false,\&quot;triggerDuration\&quot;:0}&quot;,&quot;isMobileSdkChannelEnabled&quot;:0,&quot;isKnowledgebaseConnected&quot;:0,&quot;buildWith&quot;:&quot;CUSTOM&quot;,&quot;startNodeId&quot;:585516,&quot;positionX&quot;:-733.88,&quot;positionY&quot;:2119.29,&quot;languageCode&quot;:&quot;en_GB&quot;,&quot;isUpdated&quot;:false,&quot;version&quot;:4,&quot;assignedDepartments&quot;:[]},{&quot;id&quot;:13168,&quot;accountId&quot;:&quot;5487987&quot;,&quot;botUUId&quot;:&quot;5a615257-4396-499c-b6f0-b8d08eefbcec&quot;,&quot;botName&quot;:&quot;Test for testing&quot;,&quot;lastUpdate&quot;:1750573275257,&quot;avatarName&quot;:&quot;BOT-Avatar-101.png&quot;,&quot;enabledSocialChannels&quot;:[&quot;WHATSAPP&quot;,&quot;FACEBOOK&quot;],&quot;sampleBot&quot;:0,&quot;displayName&quot;:&quot;Test for testing&quot;,&quot;tagLine&quot;:null,&quot;triggerEvent&quot;:{&quot;event&quot;:{&quot;name&quot;:&quot;click&quot;,&quot;payload&quot;:{&quot;time&quot;:null,&quot;url&quot;:null,&quot;isExactMatch&quot;:null}},&quot;priority&quot;:{&quot;option&quot;:2},&quot;online&quot;:null,&quot;offline&quot;:null},&quot;isWebChannelEnabled&quot;:0,&quot;isDraft&quot;:0,&quot;fallbackSettings&quot;:{&quot;default_message&quot;:&quot;Sorry! I am still learning :) Can you please be more specific to your query?&quot;,&quot;failed_to_answer&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;repeat_query&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;trigger_flow_on_chat_close&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;offline_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;online_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;satisfaction_survey&quot;:{&quot;type&quot;:&quot;CLOSE_CHAT&quot;,&quot;message&quot;:&quot;Session has been closed automatically due to inactivity.&quot;,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:&quot;125&quot;,&quot;enabled&quot;:true},&quot;sentiment&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;authInfoDto&quot;:{&quot;maxExpiryMinutes&quot;:3,&quot;otpNode&quot;:-1,&quot;authRequiredType&quot;:&quot;ONCE&quot;,&quot;enabled&quot;:false}},&quot;googleLogin&quot;:{&quot;authCode&quot;:null,&quot;email&quot;:null,&quot;fullName&quot;:null,&quot;refreshToken&quot;:null,&quot;accessToken&quot;:null,&quot;botId&quot;:null},&quot;botAccuracyLevel&quot;:0.5,&quot;greetingMessage&quot;:null,&quot;languageMessage&quot;:&quot;{\&quot;message\&quot;:\&quot;\&quot;,\&quot;title\&quot;:\&quot;\&quot;,\&quot;code\&quot;:\&quot;bn\&quot;}&quot;,&quot;isDeleted&quot;:false,&quot;metaInfo&quot;:null,&quot;isBotEnabled&quot;:0,&quot;webpageSettings&quot;:&quot;{\&quot;triggerFor\&quot;:\&quot;all\&quot;,\&quot;isTriggerByClickingBanner\&quot;:true,\&quot;isTriggerBasedOnDuration\&quot;:false,\&quot;triggerDuration\&quot;:0}&quot;,&quot;isMobileSdkChannelEnabled&quot;:0,&quot;isKnowledgebaseConnected&quot;:1,&quot;buildWith&quot;:&quot;CUSTOM&quot;,&quot;startNodeId&quot;:583010,&quot;positionX&quot;:0.0,&quot;positionY&quot;:2233.0,&quot;languageCode&quot;:&quot;en_GB&quot;,&quot;isUpdated&quot;:false,&quot;version&quot;:1,&quot;assignedDepartments&quot;:[]},{&quot;id&quot;:13161,&quot;accountId&quot;:&quot;5487987&quot;,&quot;botUUId&quot;:&quot;07d92b49-c506-4018-9421-40800aca91f9&quot;,&quot;botName&quot;:&quot;Nazmul Hossain&quot;,&quot;lastUpdate&quot;:1737089865713,&quot;avatarName&quot;:&quot;BOT-Avatar-101.png&quot;,&quot;enabledSocialChannels&quot;:[],&quot;sampleBot&quot;:0,&quot;displayName&quot;:&quot;Nazmul&quot;,&quot;tagLine&quot;:&quot;asdf&quot;,&quot;triggerEvent&quot;:{&quot;event&quot;:{&quot;name&quot;:&quot;click&quot;,&quot;payload&quot;:{&quot;time&quot;:null,&quot;url&quot;:null,&quot;isExactMatch&quot;:null}},&quot;priority&quot;:{&quot;option&quot;:2},&quot;online&quot;:null,&quot;offline&quot;:null},&quot;isWebChannelEnabled&quot;:0,&quot;isDraft&quot;:1,&quot;fallbackSettings&quot;:{&quot;default_message&quot;:&quot;Sorry! I am still learning :) Can you please be more specific to your query?&quot;,&quot;failed_to_answer&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;repeat_query&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;trigger_flow_on_chat_close&quot;:null,&quot;offline_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;online_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;satisfaction_survey&quot;:{&quot;type&quot;:&quot;CLOSE_CHAT&quot;,&quot;message&quot;:&quot;This chat session has been closed due to long period of unavailability.&quot;,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:&quot;5&quot;,&quot;enabled&quot;:false},&quot;sentiment&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;authInfoDto&quot;:{&quot;maxExpiryMinutes&quot;:null,&quot;otpNode&quot;:-1,&quot;authRequiredType&quot;:null,&quot;enabled&quot;:false}},&quot;googleLogin&quot;:{&quot;authCode&quot;:null,&quot;email&quot;:null,&quot;fullName&quot;:null,&quot;refreshToken&quot;:null,&quot;accessToken&quot;:null,&quot;botId&quot;:null},&quot;botAccuracyLevel&quot;:0.5,&quot;greetingMessage&quot;:null,&quot;languageMessage&quot;:&quot;{\&quot;message\&quot;:\&quot;\&quot;,\&quot;title\&quot;:\&quot;\&quot;,\&quot;code\&quot;:\&quot;bn\&quot;}&quot;,&quot;isDeleted&quot;:false,&quot;metaInfo&quot;:null,&quot;isBotEnabled&quot;:0,&quot;webpageSettings&quot;:&quot;{\&quot;triggerFor\&quot;:\&quot;all\&quot;,\&quot;isTriggerByClickingBanner\&quot;:true,\&quot;isTriggerBasedOnDuration\&quot;:false,\&quot;triggerDuration\&quot;:0}&quot;,&quot;isMobileSdkChannelEnabled&quot;:0,&quot;isKnowledgebaseConnected&quot;:0,&quot;buildWith&quot;:&quot;CUSTOM&quot;,&quot;startNodeId&quot;:null,&quot;positionX&quot;:311.0,&quot;positionY&quot;:443.0,&quot;languageCode&quot;:&quot;en&quot;,&quot;isUpdated&quot;:false,&quot;version&quot;:0,&quot;assignedDepartments&quot;:[]},{&quot;id&quot;:13132,&quot;accountId&quot;:&quot;5487987&quot;,&quot;botUUId&quot;:&quot;0bc10586-5184-46ac-9a1f-5344e2ec8405&quot;,&quot;botName&quot;:&quot;test-2&quot;,&quot;lastUpdate&quot;:1736223004787,&quot;avatarName&quot;:&quot;BOT-Avatar-101.png&quot;,&quot;enabledSocialChannels&quot;:[&quot;WHATSAPP&quot;],&quot;sampleBot&quot;:0,&quot;displayName&quot;:&quot;test-2&quot;,&quot;tagLine&quot;:null,&quot;triggerEvent&quot;:{&quot;event&quot;:{&quot;name&quot;:&quot;click&quot;,&quot;payload&quot;:{&quot;time&quot;:null,&quot;url&quot;:null,&quot;isExactMatch&quot;:null}},&quot;priority&quot;:{&quot;option&quot;:2},&quot;online&quot;:null,&quot;offline&quot;:null},&quot;isWebChannelEnabled&quot;:1,&quot;isDraft&quot;:1,&quot;fallbackSettings&quot;:{&quot;default_message&quot;:&quot;Sorry! I am still learning :) Can you please be more specific to your query?&quot;,&quot;failed_to_answer&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;repeat_query&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;trigger_flow_on_chat_close&quot;:null,&quot;offline_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;online_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;satisfaction_survey&quot;:{&quot;type&quot;:&quot;CLOSE_CHAT&quot;,&quot;message&quot;:&quot;Session has been closed automatically due to inactivity.&quot;,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:&quot;60&quot;,&quot;enabled&quot;:false},&quot;sentiment&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;authInfoDto&quot;:{&quot;maxExpiryMinutes&quot;:3,&quot;otpNode&quot;:-1,&quot;authRequiredType&quot;:&quot;ONCE&quot;,&quot;enabled&quot;:false}},&quot;googleLogin&quot;:{&quot;authCode&quot;:null,&quot;email&quot;:null,&quot;fullName&quot;:null,&quot;refreshToken&quot;:null,&quot;accessToken&quot;:null,&quot;botId&quot;:null},&quot;botAccuracyLevel&quot;:0.5,&quot;greetingMessage&quot;:null,&quot;languageMessage&quot;:&quot;{\&quot;message\&quot;:\&quot;\&quot;,\&quot;title\&quot;:\&quot;\&quot;,\&quot;code\&quot;:\&quot;bn\&quot;}&quot;,&quot;isDeleted&quot;:false,&quot;metaInfo&quot;:null,&quot;isBotEnabled&quot;:0,&quot;webpageSettings&quot;:&quot;{\&quot;triggerFor\&quot;:\&quot;all\&quot;,\&quot;isTriggerByClickingBanner\&quot;:true,\&quot;isTriggerBasedOnDuration\&quot;:false,\&quot;triggerDuration\&quot;:0}&quot;,&quot;isMobileSdkChannelEnabled&quot;:0,&quot;isKnowledgebaseConnected&quot;:1,&quot;buildWith&quot;:&quot;CUSTOM&quot;,&quot;startNodeId&quot;:582079,&quot;positionX&quot;:-223.52,&quot;positionY&quot;:30.34,&quot;languageCode&quot;:&quot;en&quot;,&quot;isUpdated&quot;:false,&quot;version&quot;:2,&quot;assignedDepartments&quot;:[]},{&quot;id&quot;:13054,&quot;accountId&quot;:&quot;5487987&quot;,&quot;botUUId&quot;:&quot;640c2257-8575-49db-854f-612d8fe8ea69&quot;,&quot;botName&quot;:&quot;Nazmul-Bot&quot;,&quot;lastUpdate&quot;:1731402303659,&quot;avatarName&quot;:&quot;BOT-Avatar-101.png&quot;,&quot;enabledSocialChannels&quot;:[&quot;WHATSAPP&quot;],&quot;sampleBot&quot;:0,&quot;displayName&quot;:&quot;Nazmul ReveBot&quot;,&quot;tagLine&quot;:&quot;&quot;,&quot;triggerEvent&quot;:{&quot;event&quot;:{&quot;name&quot;:&quot;click&quot;,&quot;payload&quot;:{&quot;time&quot;:null,&quot;url&quot;:null,&quot;isExactMatch&quot;:null}},&quot;priority&quot;:{&quot;option&quot;:2},&quot;online&quot;:null,&quot;offline&quot;:null},&quot;isWebChannelEnabled&quot;:0,&quot;isDraft&quot;:0,&quot;fallbackSettings&quot;:{&quot;default_message&quot;:&quot;Sorry! I am still learning :) Can you please be more specific to your query?&quot;,&quot;failed_to_answer&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;2&quot;,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:true},&quot;repeat_query&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;trigger_flow_on_chat_close&quot;:null,&quot;offline_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;online_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;satisfaction_survey&quot;:{&quot;type&quot;:&quot;CLOSE_CHAT&quot;,&quot;message&quot;:&quot;Session has been closed automatically due to inactivity.&quot;,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:&quot;65&quot;,&quot;enabled&quot;:true},&quot;sentiment&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;authInfoDto&quot;:{&quot;maxExpiryMinutes&quot;:3,&quot;otpNode&quot;:null,&quot;authRequiredType&quot;:&quot;ONCE&quot;,&quot;enabled&quot;:false}},&quot;googleLogin&quot;:{&quot;authCode&quot;:null,&quot;email&quot;:null,&quot;fullName&quot;:null,&quot;refreshToken&quot;:null,&quot;accessToken&quot;:null,&quot;botId&quot;:null},&quot;botAccuracyLevel&quot;:0.5,&quot;greetingMessage&quot;:null,&quot;languageMessage&quot;:&quot;{\&quot;message\&quot;:\&quot;\&quot;,\&quot;title\&quot;:\&quot;\&quot;,\&quot;code\&quot;:\&quot;bn\&quot;}&quot;,&quot;isDeleted&quot;:false,&quot;metaInfo&quot;:null,&quot;isBotEnabled&quot;:0,&quot;webpageSettings&quot;:&quot;{\&quot;triggerFor\&quot;:\&quot;all\&quot;,\&quot;isTriggerByClickingBanner\&quot;:true,\&quot;isTriggerBasedOnDuration\&quot;:false,\&quot;triggerDuration\&quot;:0}&quot;,&quot;isMobileSdkChannelEnabled&quot;:0,&quot;isKnowledgebaseConnected&quot;:0,&quot;buildWith&quot;:&quot;CUSTOM&quot;,&quot;startNodeId&quot;:581407,&quot;positionX&quot;:0.0,&quot;positionY&quot;:139.5,&quot;languageCode&quot;:&quot;en&quot;,&quot;isUpdated&quot;:false,&quot;version&quot;:0,&quot;assignedDepartments&quot;:[1488]},{&quot;id&quot;:12962,&quot;accountId&quot;:&quot;5487987&quot;,&quot;botUUId&quot;:&quot;284f06f6-7c3e-4f7a-b096-9ede139b410b&quot;,&quot;botName&quot;:&quot;Social Channel BOT&quot;,&quot;lastUpdate&quot;:1729741019159,&quot;avatarName&quot;:&quot;BOT-Avatar-101.png&quot;,&quot;enabledSocialChannels&quot;:[&quot;WHATSAPP&quot;],&quot;sampleBot&quot;:0,&quot;displayName&quot;:&quot;Media Specialist&quot;,&quot;tagLine&quot;:&quot;&quot;,&quot;triggerEvent&quot;:{&quot;event&quot;:{&quot;name&quot;:&quot;click&quot;,&quot;payload&quot;:{&quot;time&quot;:null,&quot;url&quot;:null,&quot;isExactMatch&quot;:null}},&quot;priority&quot;:{&quot;option&quot;:2},&quot;online&quot;:null,&quot;offline&quot;:null},&quot;isWebChannelEnabled&quot;:0,&quot;isDraft&quot;:0,&quot;fallbackSettings&quot;:{&quot;default_message&quot;:&quot;Sorry! I am still learning :) Can you please be more specific to your query?&quot;,&quot;failed_to_answer&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;repeat_query&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;trigger_flow_on_chat_close&quot;:null,&quot;offline_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;online_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;satisfaction_survey&quot;:{&quot;type&quot;:&quot;CLOSE_CHAT&quot;,&quot;message&quot;:&quot;This chat session has been closed due to long period of unavailability.&quot;,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:&quot;5&quot;,&quot;enabled&quot;:false},&quot;sentiment&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;authInfoDto&quot;:{&quot;maxExpiryMinutes&quot;:null,&quot;otpNode&quot;:-1,&quot;authRequiredType&quot;:null,&quot;enabled&quot;:false}},&quot;googleLogin&quot;:{&quot;authCode&quot;:null,&quot;email&quot;:null,&quot;fullName&quot;:null,&quot;refreshToken&quot;:null,&quot;accessToken&quot;:null,&quot;botId&quot;:null},&quot;botAccuracyLevel&quot;:0.5,&quot;greetingMessage&quot;:null,&quot;languageMessage&quot;:&quot;{\&quot;message\&quot;:\&quot;\&quot;,\&quot;title\&quot;:\&quot;\&quot;,\&quot;code\&quot;:\&quot;bn\&quot;}&quot;,&quot;isDeleted&quot;:false,&quot;metaInfo&quot;:null,&quot;isBotEnabled&quot;:0,&quot;webpageSettings&quot;:&quot;{\&quot;triggerFor\&quot;:\&quot;all\&quot;,\&quot;isTriggerByClickingBanner\&quot;:true,\&quot;isTriggerBasedOnDuration\&quot;:false,\&quot;triggerDuration\&quot;:0}&quot;,&quot;isMobileSdkChannelEnabled&quot;:0,&quot;isKnowledgebaseConnected&quot;:0,&quot;buildWith&quot;:&quot;CUSTOM&quot;,&quot;startNodeId&quot;:580335,&quot;positionX&quot;:-538.46,&quot;positionY&quot;:-153.99,&quot;languageCode&quot;:&quot;en_GB&quot;,&quot;isUpdated&quot;:false,&quot;version&quot;:0,&quot;assignedDepartments&quot;:[1450]},{&quot;id&quot;:12888,&quot;accountId&quot;:&quot;5487987&quot;,&quot;botUUId&quot;:&quot;89df3a4e-56b6-4d25-9c16-753b58f89fc7&quot;,&quot;botName&quot;:&quot;Flow Test&quot;,&quot;lastUpdate&quot;:1730173924403,&quot;avatarName&quot;:&quot;BOT-Avatar-101.png&quot;,&quot;enabledSocialChannels&quot;:[&quot;WHATSAPP&quot;],&quot;sampleBot&quot;:0,&quot;displayName&quot;:&quot;testing flow&quot;,&quot;tagLine&quot;:null,&quot;triggerEvent&quot;:{&quot;event&quot;:{&quot;name&quot;:&quot;click&quot;,&quot;payload&quot;:{&quot;time&quot;:null,&quot;url&quot;:null,&quot;isExactMatch&quot;:null}},&quot;priority&quot;:{&quot;option&quot;:2},&quot;online&quot;:null,&quot;offline&quot;:null},&quot;isWebChannelEnabled&quot;:1,&quot;isDraft&quot;:1,&quot;fallbackSettings&quot;:{&quot;default_message&quot;:&quot;Sorry! I am still learning :) Can you please be more specific to your query?&quot;,&quot;failed_to_answer&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;repeat_query&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;trigger_flow_on_chat_close&quot;:null,&quot;offline_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;online_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;satisfaction_survey&quot;:{&quot;type&quot;:&quot;CLOSE_CHAT&quot;,&quot;message&quot;:&quot;This chat session has been closed due to long period of unavailability.&quot;,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:&quot;5&quot;,&quot;enabled&quot;:false},&quot;sentiment&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;authInfoDto&quot;:{&quot;maxExpiryMinutes&quot;:null,&quot;otpNode&quot;:-1,&quot;authRequiredType&quot;:null,&quot;enabled&quot;:false}},&quot;googleLogin&quot;:{&quot;authCode&quot;:null,&quot;email&quot;:null,&quot;fullName&quot;:null,&quot;refreshToken&quot;:null,&quot;accessToken&quot;:null,&quot;botId&quot;:null},&quot;botAccuracyLevel&quot;:0.5,&quot;greetingMessage&quot;:null,&quot;languageMessage&quot;:&quot;{\&quot;message\&quot;:\&quot;\&quot;,\&quot;title\&quot;:\&quot;\&quot;,\&quot;code\&quot;:\&quot;bn\&quot;}&quot;,&quot;isDeleted&quot;:false,&quot;metaInfo&quot;:null,&quot;isBotEnabled&quot;:0,&quot;webpageSettings&quot;:&quot;{\&quot;triggerFor\&quot;:\&quot;all\&quot;,\&quot;isTriggerByClickingBanner\&quot;:true,\&quot;isTriggerBasedOnDuration\&quot;:false,\&quot;triggerDuration\&quot;:0}&quot;,&quot;isMobileSdkChannelEnabled&quot;:0,&quot;isKnowledgebaseConnected&quot;:0,&quot;buildWith&quot;:&quot;CUSTOM&quot;,&quot;startNodeId&quot;:579836,&quot;positionX&quot;:-227.5,&quot;positionY&quot;:-85.0,&quot;languageCode&quot;:&quot;en&quot;,&quot;isUpdated&quot;:false,&quot;version&quot;:0,&quot;assignedDepartments&quot;:[]},{&quot;id&quot;:12834,&quot;accountId&quot;:&quot;5487987&quot;,&quot;botUUId&quot;:&quot;e2093eb5-61d8-455c-8f5b-cf7121b39eab&quot;,&quot;botName&quot;:&quot;Hamid_Bhai_Bot_Builder&quot;,&quot;lastUpdate&quot;:1727762679814,&quot;avatarName&quot;:&quot;BOT-Avatar-101.png&quot;,&quot;enabledSocialChannels&quot;:[],&quot;sampleBot&quot;:0,&quot;displayName&quot;:&quot;Hamid_Bhai_Bot_Builder&quot;,&quot;tagLine&quot;:&quot;QA&quot;,&quot;triggerEvent&quot;:{&quot;event&quot;:{&quot;name&quot;:&quot;click&quot;,&quot;payload&quot;:{&quot;time&quot;:null,&quot;url&quot;:null,&quot;isExactMatch&quot;:null}},&quot;priority&quot;:{&quot;option&quot;:2},&quot;online&quot;:null,&quot;offline&quot;:null},&quot;isWebChannelEnabled&quot;:1,&quot;isDraft&quot;:1,&quot;fallbackSettings&quot;:{&quot;default_message&quot;:&quot;Sorry! I am still learning :) Can you please be more specific to your query?&quot;,&quot;failed_to_answer&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;repeat_query&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;trigger_flow_on_chat_close&quot;:null,&quot;offline_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;online_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;satisfaction_survey&quot;:{&quot;type&quot;:&quot;CLOSE_CHAT&quot;,&quot;message&quot;:&quot;This chat session has been closed due to long period of unavailability.&quot;,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:&quot;5&quot;,&quot;enabled&quot;:false},&quot;sentiment&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;authInfoDto&quot;:{&quot;maxExpiryMinutes&quot;:null,&quot;otpNode&quot;:-1,&quot;authRequiredType&quot;:null,&quot;enabled&quot;:false}},&quot;googleLogin&quot;:{&quot;authCode&quot;:null,&quot;email&quot;:null,&quot;fullName&quot;:null,&quot;refreshToken&quot;:null,&quot;accessToken&quot;:null,&quot;botId&quot;:null},&quot;botAccuracyLevel&quot;:0.5,&quot;greetingMessage&quot;:null,&quot;languageMessage&quot;:&quot;{\&quot;message\&quot;:\&quot;\&quot;,\&quot;title\&quot;:\&quot;\&quot;,\&quot;code\&quot;:\&quot;bn\&quot;}&quot;,&quot;isDeleted&quot;:false,&quot;metaInfo&quot;:null,&quot;isBotEnabled&quot;:0,&quot;webpageSettings&quot;:&quot;{\&quot;triggerFor\&quot;:\&quot;all\&quot;,\&quot;isTriggerByClickingBanner\&quot;:true,\&quot;isTriggerBasedOnDuration\&quot;:false,\&quot;triggerDuration\&quot;:0}&quot;,&quot;isMobileSdkChannelEnabled&quot;:0,&quot;isKnowledgebaseConnected&quot;:0,&quot;buildWith&quot;:&quot;CUSTOM&quot;,&quot;startNodeId&quot;:578265,&quot;positionX&quot;:-337.13,&quot;positionY&quot;:-50.46,&quot;languageCode&quot;:&quot;en&quot;,&quot;isUpdated&quot;:false,&quot;version&quot;:0,&quot;assignedDepartments&quot;:[1500]},{&quot;id&quot;:12826,&quot;accountId&quot;:&quot;5487987&quot;,&quot;botUUId&quot;:&quot;c0c85d1d-9bdc-4971-883f-f0ee4592c385&quot;,&quot;botName&quot;:&quot;cvb_copy_copy&quot;,&quot;lastUpdate&quot;:1727680320620,&quot;avatarName&quot;:&quot;BOT-Avatar-101.png&quot;,&quot;enabledSocialChannels&quot;:[],&quot;sampleBot&quot;:0,&quot;displayName&quot;:&quot;zcxdfcbgvb&quot;,&quot;tagLine&quot;:null,&quot;triggerEvent&quot;:{&quot;event&quot;:{&quot;name&quot;:&quot;click&quot;,&quot;payload&quot;:{&quot;time&quot;:null,&quot;url&quot;:null,&quot;isExactMatch&quot;:null}},&quot;priority&quot;:{&quot;option&quot;:2},&quot;online&quot;:null,&quot;offline&quot;:null},&quot;isWebChannelEnabled&quot;:1,&quot;isDraft&quot;:1,&quot;fallbackSettings&quot;:{&quot;default_message&quot;:&quot;Sorry! I am still learning :) Can you please be more specific to your query?&quot;,&quot;failed_to_answer&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;repeat_query&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;trigger_flow_on_chat_close&quot;:null,&quot;offline_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;online_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;satisfaction_survey&quot;:{&quot;type&quot;:&quot;CLOSE_CHAT&quot;,&quot;message&quot;:&quot;This chat session has been closed due to long period of unavailability.&quot;,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:&quot;5&quot;,&quot;enabled&quot;:false},&quot;sentiment&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;authInfoDto&quot;:{&quot;maxExpiryMinutes&quot;:null,&quot;otpNode&quot;:null,&quot;authRequiredType&quot;:null,&quot;enabled&quot;:false}},&quot;googleLogin&quot;:{&quot;authCode&quot;:null,&quot;email&quot;:null,&quot;fullName&quot;:null,&quot;refreshToken&quot;:null,&quot;accessToken&quot;:null,&quot;botId&quot;:null},&quot;botAccuracyLevel&quot;:0.5,&quot;greetingMessage&quot;:null,&quot;languageMessage&quot;:&quot;{\&quot;message\&quot;:\&quot;\&quot;,\&quot;title\&quot;:\&quot;\&quot;,\&quot;code\&quot;:\&quot;bn\&quot;}&quot;,&quot;isDeleted&quot;:false,&quot;metaInfo&quot;:null,&quot;isBotEnabled&quot;:0,&quot;webpageSettings&quot;:&quot;{\&quot;triggerFor\&quot;:\&quot;all\&quot;,\&quot;isTriggerByClickingBanner\&quot;:true,\&quot;isTriggerBasedOnDuration\&quot;:false,\&quot;triggerDuration\&quot;:0}&quot;,&quot;isMobileSdkChannelEnabled&quot;:0,&quot;isKnowledgebaseConnected&quot;:1,&quot;buildWith&quot;:&quot;CUSTOM&quot;,&quot;startNodeId&quot;:578122,&quot;positionX&quot;:0.0,&quot;positionY&quot;:1129.0,&quot;languageCode&quot;:&quot;en&quot;,&quot;isUpdated&quot;:false,&quot;version&quot;:0,&quot;assignedDepartments&quot;:[]},{&quot;id&quot;:12821,&quot;accountId&quot;:&quot;5487987&quot;,&quot;botUUId&quot;:&quot;9d87dbe7-4b6d-41ad-b722-ad520857ad86&quot;,&quot;botName&quot;:&quot;Food Order Collection_copy&quot;,&quot;lastUpdate&quot;:1727605034802,&quot;avatarName&quot;:&quot;pizza.png&quot;,&quot;enabledSocialChannels&quot;:[],&quot;sampleBot&quot;:0,&quot;displayName&quot;:&quot;Reve Kitchen&quot;,&quot;tagLine&quot;:&quot;Bon App&eacute;tit!&quot;,&quot;triggerEvent&quot;:{&quot;event&quot;:{&quot;name&quot;:&quot;click&quot;,&quot;payload&quot;:{&quot;time&quot;:null,&quot;url&quot;:null,&quot;isExactMatch&quot;:null}},&quot;priority&quot;:{&quot;option&quot;:2},&quot;online&quot;:null,&quot;offline&quot;:null},&quot;isWebChannelEnabled&quot;:1,&quot;isDraft&quot;:1,&quot;fallbackSettings&quot;:{&quot;default_message&quot;:&quot;Sorry! I am still learning :) Can you please be more specific to your query?&quot;,&quot;failed_to_answer&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;repeat_query&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;trigger_flow_on_chat_close&quot;:null,&quot;offline_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;online_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;satisfaction_survey&quot;:{&quot;type&quot;:&quot;CLOSE_CHAT&quot;,&quot;message&quot;:&quot;This chat session has been closed due to long period of unavailability.&quot;,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:&quot;5&quot;,&quot;enabled&quot;:false},&quot;sentiment&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;authInfoDto&quot;:{&quot;maxExpiryMinutes&quot;:null,&quot;otpNode&quot;:null,&quot;authRequiredType&quot;:null,&quot;enabled&quot;:false}},&quot;googleLogin&quot;:{&quot;authCode&quot;:null,&quot;email&quot;:null,&quot;fullName&quot;:null,&quot;refreshToken&quot;:null,&quot;accessToken&quot;:null,&quot;botId&quot;:null},&quot;botAccuracyLevel&quot;:0.5,&quot;greetingMessage&quot;:null,&quot;languageMessage&quot;:&quot;{\&quot;title\&quot;:\&quot;\&quot;}&quot;,&quot;isDeleted&quot;:false,&quot;metaInfo&quot;:null,&quot;isBotEnabled&quot;:0,&quot;webpageSettings&quot;:&quot;{\&quot;triggerFor\&quot;:\&quot;all\&quot;,\&quot;isTriggerByClickingBanner\&quot;:true,\&quot;isTriggerBasedOnDuration\&quot;:false,\&quot;triggerDuration\&quot;:0}&quot;,&quot;isMobileSdkChannelEnabled&quot;:0,&quot;isKnowledgebaseConnected&quot;:0,&quot;buildWith&quot;:&quot;CUSTOM&quot;,&quot;startNodeId&quot;:578035,&quot;positionX&quot;:null,&quot;positionY&quot;:null,&quot;languageCode&quot;:&quot;en&quot;,&quot;isUpdated&quot;:false,&quot;version&quot;:0,&quot;assignedDepartments&quot;:[1450]},{&quot;id&quot;:12813,&quot;accountId&quot;:&quot;5487987&quot;,&quot;botUUId&quot;:&quot;40c73a99-f2db-4103-80d7-9bde706887fa&quot;,&quot;botName&quot;:&quot;cvb_copy&quot;,&quot;lastUpdate&quot;:1727666927102,&quot;avatarName&quot;:&quot;BOT-Avatar-101.png&quot;,&quot;enabledSocialChannels&quot;:[],&quot;sampleBot&quot;:0,&quot;displayName&quot;:&quot;zcxdfcbgvb&quot;,&quot;tagLine&quot;:&quot;&quot;,&quot;triggerEvent&quot;:{&quot;event&quot;:{&quot;name&quot;:&quot;click&quot;,&quot;payload&quot;:{&quot;time&quot;:null,&quot;url&quot;:null,&quot;isExactMatch&quot;:null}},&quot;priority&quot;:{&quot;option&quot;:2},&quot;online&quot;:null,&quot;offline&quot;:null},&quot;isWebChannelEnabled&quot;:0,&quot;isDraft&quot;:1,&quot;fallbackSettings&quot;:{&quot;default_message&quot;:&quot;Sorry! I am still learning :) Can you please be more specific to your query?&quot;,&quot;failed_to_answer&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;repeat_query&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;trigger_flow_on_chat_close&quot;:null,&quot;offline_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;online_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;satisfaction_survey&quot;:{&quot;type&quot;:&quot;CLOSE_CHAT&quot;,&quot;message&quot;:&quot;This chat session has been closed due to long period of unavailability.&quot;,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:&quot;5&quot;,&quot;enabled&quot;:false},&quot;sentiment&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;authInfoDto&quot;:{&quot;maxExpiryMinutes&quot;:null,&quot;otpNode&quot;:null,&quot;authRequiredType&quot;:null,&quot;enabled&quot;:false}},&quot;googleLogin&quot;:{&quot;authCode&quot;:null,&quot;email&quot;:null,&quot;fullName&quot;:null,&quot;refreshToken&quot;:null,&quot;accessToken&quot;:null,&quot;botId&quot;:null},&quot;botAccuracyLevel&quot;:0.5,&quot;greetingMessage&quot;:null,&quot;languageMessage&quot;:&quot;{\&quot;message\&quot;:\&quot;\&quot;,\&quot;title\&quot;:\&quot;\&quot;,\&quot;code\&quot;:\&quot;bn\&quot;}&quot;,&quot;isDeleted&quot;:false,&quot;metaInfo&quot;:null,&quot;isBotEnabled&quot;:0,&quot;webpageSettings&quot;:&quot;{\&quot;triggerFor\&quot;:\&quot;all\&quot;,\&quot;isTriggerByClickingBanner\&quot;:true,\&quot;isTriggerBasedOnDuration\&quot;:false,\&quot;triggerDuration\&quot;:0}&quot;,&quot;isMobileSdkChannelEnabled&quot;:0,&quot;isKnowledgebaseConnected&quot;:1,&quot;buildWith&quot;:&quot;CUSTOM&quot;,&quot;startNodeId&quot;:577841,&quot;positionX&quot;:0.0,&quot;positionY&quot;:1170.25,&quot;languageCode&quot;:&quot;en&quot;,&quot;isUpdated&quot;:false,&quot;version&quot;:0,&quot;assignedDepartments&quot;:[1450]},{&quot;id&quot;:12734,&quot;accountId&quot;:&quot;5487987&quot;,&quot;botUUId&quot;:&quot;58348d11-127b-476e-be6a-09d9b09cae5b&quot;,&quot;botName&quot;:&quot;Pricing Bot&quot;,&quot;lastUpdate&quot;:1728460232124,&quot;avatarName&quot;:&quot;BOT-Avatar-103.png&quot;,&quot;enabledSocialChannels&quot;:[&quot;WHATSAPP&quot;],&quot;sampleBot&quot;:0,&quot;displayName&quot;:&quot;REVE Pricing Bot&quot;,&quot;tagLine&quot;:&quot;Virtual Assistant&quot;,&quot;triggerEvent&quot;:{&quot;event&quot;:{&quot;name&quot;:&quot;click&quot;,&quot;payload&quot;:{&quot;time&quot;:null,&quot;url&quot;:null,&quot;isExactMatch&quot;:null}},&quot;priority&quot;:{&quot;option&quot;:2},&quot;online&quot;:null,&quot;offline&quot;:null},&quot;isWebChannelEnabled&quot;:1,&quot;isDraft&quot;:0,&quot;fallbackSettings&quot;:{&quot;default_message&quot;:&quot;Sorry! I am still learning :) Can you please be more specific to your query?&quot;,&quot;failed_to_answer&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;repeat_query&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;trigger_flow_on_chat_close&quot;:null,&quot;offline_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;online_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;satisfaction_survey&quot;:{&quot;type&quot;:&quot;CLOSE_CHAT&quot;,&quot;message&quot;:&quot;This chat session has been closed due to long period of unavailability.&quot;,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:&quot;5&quot;,&quot;enabled&quot;:false},&quot;sentiment&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;authInfoDto&quot;:{&quot;maxExpiryMinutes&quot;:null,&quot;otpNode&quot;:-1,&quot;authRequiredType&quot;:null,&quot;enabled&quot;:false}},&quot;googleLogin&quot;:{&quot;authCode&quot;:null,&quot;email&quot;:null,&quot;fullName&quot;:null,&quot;refreshToken&quot;:null,&quot;accessToken&quot;:null,&quot;botId&quot;:null},&quot;botAccuracyLevel&quot;:0.5,&quot;greetingMessage&quot;:null,&quot;languageMessage&quot;:&quot;{\&quot;title\&quot;:\&quot;\&quot;}&quot;,&quot;isDeleted&quot;:false,&quot;metaInfo&quot;:null,&quot;isBotEnabled&quot;:0,&quot;webpageSettings&quot;:&quot;{\&quot;triggerFor\&quot;:\&quot;all\&quot;,\&quot;isTriggerByClickingBanner\&quot;:true,\&quot;isTriggerBasedOnDuration\&quot;:false,\&quot;triggerDuration\&quot;:0}&quot;,&quot;isMobileSdkChannelEnabled&quot;:0,&quot;isKnowledgebaseConnected&quot;:1,&quot;buildWith&quot;:&quot;CUSTOM&quot;,&quot;startNodeId&quot;:576678,&quot;positionX&quot;:20.0,&quot;positionY&quot;:20.0,&quot;languageCode&quot;:&quot;en&quot;,&quot;isUpdated&quot;:false,&quot;version&quot;:0,&quot;assignedDepartments&quot;:[]},{&quot;id&quot;:9561,&quot;accountId&quot;:&quot;5487987&quot;,&quot;botUUId&quot;:&quot;0b3930ad-bd70-4936-ad4d-bb023bf0cb04&quot;,&quot;botName&quot;:&quot;Student&quot;,&quot;lastUpdate&quot;:1726043812279,&quot;avatarName&quot;:&quot;BOT-Avatar-101.png&quot;,&quot;enabledSocialChannels&quot;:[],&quot;sampleBot&quot;:0,&quot;displayName&quot;:&quot;Student BOT&quot;,&quot;tagLine&quot;:&quot;Manager&quot;,&quot;triggerEvent&quot;:{&quot;event&quot;:{&quot;name&quot;:&quot;click&quot;,&quot;payload&quot;:{&quot;time&quot;:null,&quot;url&quot;:null,&quot;isExactMatch&quot;:null}},&quot;priority&quot;:{&quot;option&quot;:2},&quot;online&quot;:null,&quot;offline&quot;:null},&quot;isWebChannelEnabled&quot;:1,&quot;isDraft&quot;:1,&quot;fallbackSettings&quot;:{&quot;default_message&quot;:&quot;Sorry! I am still learning :) Can you please be more specific to your query?&quot;,&quot;failed_to_answer&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;repeat_query&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:&quot;3&quot;,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;trigger_flow_on_chat_close&quot;:null,&quot;offline_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;online_form&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;satisfaction_survey&quot;:{&quot;type&quot;:&quot;CLOSE_CHAT&quot;,&quot;message&quot;:&quot;This chat session has been closed due to long period of unavailability.&quot;,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:null,&quot;survey_conf_time&quot;:&quot;5&quot;,&quot;enabled&quot;:false},&quot;sentiment&quot;:{&quot;type&quot;:null,&quot;message&quot;:null,&quot;max_limit&quot;:null,&quot;response_intent_id&quot;:-1,&quot;survey_conf_time&quot;:null,&quot;enabled&quot;:false},&quot;authInfoDto&quot;:{&quot;maxExpiryMinutes&quot;:null,&quot;otpNode&quot;:-1,&quot;authRequiredType&quot;:null,&quot;enabled&quot;:false}},&quot;googleLogin&quot;:{&quot;authCode&quot;:null,&quot;email&quot;:null,&quot;fullName&quot;:null,&quot;refreshToken&quot;:null,&quot;accessToken&quot;:null,&quot;botId&quot;:null},&quot;botAccuracyLevel&quot;:0.5,&quot;greetingMessage&quot;:null,&quot;languageMessage&quot;:&quot;{\&quot;message\&quot;:\&quot;\&quot;,\&quot;title\&quot;:\&quot;\&quot;,\&quot;code\&quot;:\&quot;bn\&quot;}&quot;,&quot;isDeleted&quot;:false,&quot;metaInfo&quot;:null,&quot;isBotEnabled&quot;:0,&quot;webpageSettings&quot;:&quot;{\&quot;triggerFor\&quot;:\&quot;all\&quot;,\&quot;isTriggerByClickingBanner\&quot;:true,\&quot;isTriggerBasedOnDuration\&quot;:false,\&quot;triggerDuration\&quot;:0}&quot;,&quot;isMobileSdkChannelEnabled&quot;:0,&quot;isKnowledgebaseConnected&quot;:1,&quot;buildWith&quot;:&quot;GEN_AI&quot;,&quot;startNodeId&quot;:544756,&quot;positionX&quot;:null,&quot;positionY&quot;:null,&quot;languageCode&quot;:&quot;en&quot;,&quot;isUpdated&quot;:false,&quot;version&quot;:0,&quot;assignedDepartments&quot;:[1450]}]}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match response.status == 'success'</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match response.message == 'found'</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.289</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def botPayload = read('classpath:demo/bot_info_rest_controller/data/botInfo.json')</span>
+
+  <span class="lead-duration duration">0.176</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def addFaqPayload = botPayload.createFaq</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def JsonModifier = Java.type('demo.bot_info_rest_controller.util.JsonModifier')</span>
+
+  <span class="lead-duration duration">0.023</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def updated = JsonModifier.updateFaqName(botPayload)</span>
+
+  <span class="lead-duration duration">0.066</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def modifiedFaqName = updated.createFaq.name</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print modifiedFaqName</span>
+
+  <span class="lead-duration duration">0.009</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>13:23:02.554 [print] FAQ-Test-40014 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Accept = '*/*'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Authorization = globalAuthToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header User-Agent = 'REVECHAT-MOBILE-APP'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Cookie = 'JSESSIONID=YjA5OTQyNDMtMGJlMi00YmQ5LWE0OGYtNTcxNmY1YTllNjhh; revechatLocaleCookie=en'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">1.433</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-10">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Add FAQ.</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-10" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url baseUrl + '/bot/faq/add/13424/5487987'</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request updated.createFaq</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">1.372</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>13:23:02.935 request:
+1 &gt; POST https://test-chat-022.revechat.com/rest/v1/bot/faq/add/13424/5487987
+1 &gt; Accept: */*
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Authorization: eyJhbGciOiJIUzI1NiJ9.eyJhY2NvdW50SWQiOiI1NDg3OTg3Iiwic3ViIjoiYXV0aG9yaXphdGlvbiIsImV4cCI6MTc1MjU2NDkxNCwidXNlcklkIjo4NTY0MDc4LCJpYXQiOjE3NDk5NzI5MTR9.W_f9mRkq_8agu4tgVRt_pfhgV1g2wpTP88rUHYIHheo
+1 &gt; User-Agent: REVECHAT-MOBILE-APP
+1 &gt; Cookie: JSESSIONID=YjA5OTQyNDMtMGJlMi00YmQ5LWE0OGYtNTcxNmY1YTllNjhh; revechatLocaleCookie=en
+1 &gt; Content-Length: 264
+1 &gt; Host: test-chat-022.revechat.com
+1 &gt; Connection: Keep-Alive
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;accountId&quot;:&quot;5487987&quot;,&quot;botId&quot;:13424,&quot;createdTime&quot;:0,&quot;flowId&quot;:0,&quot;height&quot;:0,&quot;intentId&quot;:0,&quot;isDeleted&quot;:0,&quot;isUpdated&quot;:true,&quot;name&quot;:&quot;FAQ-Test-40014&quot;,&quot;note&quot;:&quot;This is test -5&quot;,&quot;positionX&quot;:0,&quot;positionY&quot;:0,&quot;response&quot;:&quot;string&quot;,&quot;serialNo&quot;:0,&quot;type&quot;:&quot;FAQ&quot;,&quot;version&quot;:0,&quot;width&quot;:0}
+
+13:23:03.933 response time in milliseconds: 980
+1 &lt; 200
+1 &lt; Server: nginx/1.20.1
+1 &lt; Date: Mon, 23 Jun 2025 07:23:04 GMT
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; Set-Cookie: revechatLocaleCookie=en; Max-Age=31536000; Expires=Tue, 23-Jun-2026 07:23:04 GMT; Path=/; SameSite=None
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+1 &lt; Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+{&quot;status&quot;:&quot;success&quot;,&quot;message&quot;:&quot;found&quot;,&quot;body&quot;:{&quot;intentId&quot;:586785,&quot;name&quot;:&quot;FAQ-Test-40014&quot;,&quot;response&quot;:null,&quot;accountId&quot;:&quot;5487987&quot;,&quot;botId&quot;:13424,&quot;type&quot;:&quot;FAQ&quot;,&quot;createdTime&quot;:1750663384283,&quot;isDeleted&quot;:0,&quot;serialNo&quot;:0,&quot;positionX&quot;:0.0,&quot;positionY&quot;:0.0,&quot;width&quot;:0.0,&quot;height&quot;:0.0,&quot;version&quot;:0,&quot;isUpdated&quot;:true,&quot;note&quot;:&quot;This is test -5&quot;,&quot;flowId&quot;:0}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response.body.name</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>13:23:03.944 [print] FAQ-Test-40014 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print modifiedFaqName</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>13:23:03.946 [print] FAQ-Test-40014 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match response.body.name == modifiedFaqName</span>
+
+  <span class="lead-duration duration">0.050</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

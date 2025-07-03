@@ -1,9 +1,11 @@
 test\ServerStart.class
 test\ServerStop.class
-demo\TestBase.class
 demo\DemoRunner.class
 demo\DemoTestParallel.class
-test\MonitorThread.class
 test\Stoppable.class
 demo\DemoTestSelected.class
+demo\ticket_rest_controller\util\JsonModifier.class
+demo\bot_info_rest_controller\util\JsonModifier.class
+demo\TestBase.class
+test\MonitorThread.class
 revechat\ReveChatTestRunner.class

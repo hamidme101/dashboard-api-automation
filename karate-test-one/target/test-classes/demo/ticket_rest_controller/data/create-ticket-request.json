@@ -1,0 +1,66 @@
+{
+  "accountId": "5487987",
+  "attachments": [],
+  "confirmationEmailStatus": "TO_SEND",
+  "creationSource": "MANUAL",
+  "creatorId": 8564078,
+  "description": "",
+  "hasNewMsg": true,
+  "subject": "Test ticket 2",
+  "tagIds": [],
+  "ticketCreationType": "OUTBOUND",
+  "visitorRecordId": 394810,
+  "vsVisitorId": null,
+  "ticketPriorityId": 5,
+  "ticketStatusId": 1,
+  "dueDate": null,
+  "timeZoneOffset": -360,
+  "chatInfoId": null,
+  "assigneeId": null,
+  "formUUID": "c2790ef9-afb7-45a6-b467-d5c383f4160c",
+  "fields": [
+    {
+      "key": "Recipient Name",
+      "value": "Hamid Khan-5",
+      "attribute": "ticket_recipient_name",
+      "id": "809e7330-5975-4a42-bdd0-e52173a877b8",
+      "valueLabel": "Hamid Khan-2"
+    },
+    {
+      "key": "Recipient Email",
+      "value": "hamid.khan@gmail.com",
+      "attribute": "ticket_recipient_email",
+      "id": "775a33ba-46dd-4fa4-97db-cf948f789dcf",
+      "valueLabel": "hamid.khan@gmail.com"
+    },
+    {
+      "key": "Select area where you are facing the problem",
+      "value": "",
+      "attribute": "problem_area",
+      "id": "7617b061-8f44-51e2-41b0-04d009d51b3f",
+      "valueLabel": ""
+    },
+    {
+      "key": "Subject",
+      "value": "Test ticket 3",
+      "attribute": "ticket_subject",
+      "id": "f780bd4c-b3e1-455f-94f0-56e7d9016f74",
+      "valueLabel": "Test ticket 2"
+    },
+    {
+      "key": "Description",
+      "value": "<p>This is test ticket -2</p>",
+      "attribute": "ticket_description",
+      "id": "d824e5bc-40d6-486e-a34d-9c8537d071ff",
+      "valueLabel": "This is test ticket -2"
+    },
+    {
+      "key": "Upload a reference",
+      "value": "",
+      "attribute": "attached_reference",
+      "id": "a061a98c-92bc-3c45-8b18-c4e7fee43c0a",
+      "valueLabel": ""
+    }
+  ],
+  "visitorUUID": "0425d804-5d19-48ed-97c2-bbfc0a79be8f"
+}
